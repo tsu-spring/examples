@@ -1,2 +1,2 @@
-# examples
-Example projects for each topic
+# Example Projects
+Example projects for each topic.
