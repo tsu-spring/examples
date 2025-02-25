@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>Contact Us</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>📞 Get in Touch with Us</h1>
+    <p>Have questions or need assistance? Our team is here to help! Fill out the form below or reach out via phone or
+        email.</p>
+
+    <form class="contact-form mb-1" th:action="@{/contact-us}" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <section>
+            <h2>📍 Contact Information</h2>
+            <p><b>Email:</b> support@shopease.com</p>
+            <p><b>Phone:</b> +1 (800) 123-4567</p>
+            <p><b>Address:</b> 123 ShopEase Plaza, New York, NY 10001</p>
+
+            <h2>🕒 Business Hours</h2>
+            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+            <p>Saturday - Sunday: 10:00 AM - 4:00 PM</p>
+        </section>
+        <section>
+            <img class="img-fluid" th:src="@{/image/shop.png}" alt="shop image">
+        </section>
+    </div>
+</div>
+</body>
+</html>

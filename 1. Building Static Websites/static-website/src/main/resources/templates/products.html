@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>Products</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>ShopEase - Featured Products</h1>
+    <p>
+        Welcome to the ShopEase Products Page! Browse our top-selling items and discover unbeatable deals on the latest
+        must-haves.
+    </p>
+
+    <h1>🔥 Featured Products</h1>
+    <div class="product-list">
+        <div class="product-list-row">
+            <div class="panel">
+                <h3 class="panel-title">
+                    1. UltraX Pro Wireless Headphones 🎧
+                </h3>
+                <img class="panel-image img-fluid" th:src="@{/image/product1.png}" alt="image of product 1">
+                <div class="panel-body">
+                    <p>💰 Price: $79.99</p>
+                    <p>🔹 Noise-canceling technology, 30-hour battery life, and superior sound quality.</p>
+                </div>
+            </div>
+            <div class="panel">
+                <h3 class="panel-title">
+                    2. SmartFit X1 Fitness Tracker ⌚
+                </h3>
+                <img class="panel-image img-fluid" th:src="@{/image/product2.png}" alt="image of product 2">
+                <div class="panel-body">
+                    <p>💰 Price: $49.99</p>
+                    <p>🔹 Tracks steps, heart rate, sleep patterns, and syncs with your phone for real-time updates.</p>
+                </div>
+            </div>
+            <div class="panel">
+                <h3 class="panel-title">
+                    3. MegaCharge Power Bank (20,000mAh) ⚡
+                </h3>
+                <img class="panel-image img-fluid" th:src="@{/image/product3.png}" alt="image of product 3">
+                <div class="panel-body">
+                    <p>💰 Price: $34.99</p>
+                    <p>🔹 Ultra-fast charging with dual USB ports—perfect for travel and emergencies.</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-list-row">
+            <div class="panel">
+                <h3 class="panel-title">
+                    4. LuxeComfort Memory Foam Pillow 🛏️
+                </h3>
+                <img class="panel-image img-fluid" th:src="@{/image/product4.png}" alt="image of product 4">
+                <div class="panel-body">
+                    <p>💰 Price: $29.99</p>
+                    <p>🔹 Designed for maximum neck and back support to improve sleep quality.</p>
+                </div>
+            </div>
+            <div class="panel">
+                <h3 class="panel-title">
+                    5. Quantum Ultra HD Smart TV (55") 📺
+                </h3>
+                <img class="panel-image img-fluid" th:src="@{/image/product5.png}" alt="image of product 5">
+                <div class="panel-body">
+                    <p>💰 Price: $499.99</p>
+                    <p>🔹 Stunning 4K resolution, built-in apps, and voice control for the ultimate entertainment
+                        experience.</p>
+                </div>
+            </div>
+            <div class="panel">
+                <h3 class="panel-title">
+                    6. GourmetBlend Coffee Maker ☕
+                </h3>
+                <img class="panel-image img-fluid" th:src="@{/image/product6.png}" alt="image of product 6">
+                <div class="panel-body">
+                    <p>💰 Price: $89.99</p>
+                    <p>🔹 Enjoy crispy, oil-free cooking with a spacious basket and digital touchscreen controls.</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-list-row">
+            <div class="panel">
+                <h3 class="panel-title">
+                    7. TurboChef Air Fryer (5.8 Qt) 🍟
+                </h3>
+                <img class="panel-image img-fluid" th:src="@{/image/product7.png}" alt="image of product 7">
+                <div class="panel-body">
+                    <p>💰 Price: $89.99</p>
+                    <p>🔹 Enjoy crispy, oil-free cooking with a spacious basket and digital touchscreen controls.</p>
+                </div>
+            </div>
+            <div class="panel">
+                <h3 class="panel-title">
+                    8. SwiftBook X Laptop (Intel i7, 16GB RAM) 💻
+                </h3>
+                <img class="panel-image img-fluid" th:src="@{/image/product8.png}" alt="image of product 8">
+                <div class="panel-body">
+                    <p>💰 Price: $899.99</p>
+                    <p>🔹 High-performance laptop with a sleek design, perfect for work and entertainment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>🛒 Shop now and enjoy fast shipping, secure payments, and amazing deals only at ShopEase!</p>
+</div>
+</body>
+</html>
