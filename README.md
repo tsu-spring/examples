@@ -1,2 +1,3 @@
-# Example Projects
-Example projects for each topic.
+# სამაგალითო პროექტები
+
+სამაგალითო პროექტები დალაგებული თემების მიხედვით.
