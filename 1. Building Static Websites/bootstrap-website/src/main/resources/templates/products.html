@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>Products</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>ShopEase - Featured Products</h1>
+    <p>
+        Welcome to the ShopEase Products Page! Browse our top-selling items and discover unbeatable deals on the latest
+        must-haves.
+    </p>
+    <div class="alert alert-danger mt-3" role="alert">
+        🛒 Shop now and enjoy fast shipping, secure payments, and amazing deals only at ShopEase!
+    </div>
+
+    <h1>🔥 Featured Products</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+        <div class="col">
+            <div th:replace="~{fragment/product(title='UltraX Pro Wireless Headphones', price='79.99', description='Noise-canceling technology, 30-hour battery life, and superior sound quality.', imgUrl='/image/product1.png')}"></div>
+        </div>
+        <div class="col">
+            <div th:replace="~{fragment/product(title='SmartFit X1 Fitness Tracker', price='49.99', description='Tracks steps, heart rate, sleep patterns, and syncs with your phone for real-time updates.', imgUrl='/image/product2.png')}"></div>
+        </div>
+        <div class="col">
+            <div th:replace="~{fragment/product(title='MegaCharge Power Bank (20,000mAh)', price='34.99', description='Ultra-fast charging with dual USB ports—perfect for travel and emergencies.', imgUrl='/image/product3.png')}"></div>
+        </div>
+        <div class="col">
+            <div th:replace="~{fragment/product(title='LuxeComfort Memory Foam Pillow', price='29.99', description='Designed for maximum neck and back support to improve sleep quality.', imgUrl='/image/product4.png')}"></div>
+        </div>
+        <div class="col">
+            <div th:replace="~{fragment/product(title='Quantum Ultra HD Smart TV', price='499.99', description='Stunning 4K resolution, built-in apps, and voice control for the ultimate entertainment experience.', imgUrl='/image/product5.png')}"></div>
+        </div>
+        <div class="col">
+            <div th:replace="~{fragment/product(title='GourmetBlend Coffee Maker', price='89.99', description='Enjoy crispy, oil-free cooking with a spacious basket and digital touchscreen controls.', imgUrl='/image/product6.png')}"></div>
+        </div>
+        <div class="col">
+            <div th:replace="~{fragment/product(title='TurboChef Air Fryer (5.8 Qt)', price='89.99', description='Enjoy crispy, oil-free cooking with a spacious basket and digital touchscreen controls.', imgUrl='/image/product7.png')}"></div>
+        </div>
+        <div class="col">
+            <div th:replace="~{fragment/product(title='SwiftBook X Laptop (Intel i7, 16GB RAM)', price='899.99', description='High-performance laptop with a sleek design, perfect for work and entertainment.', imgUrl='/image/product8.png')}"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

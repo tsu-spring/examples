@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: bootstrap-website
+  thymeleaf:
+    cache: false
+server:
+  port: 9090

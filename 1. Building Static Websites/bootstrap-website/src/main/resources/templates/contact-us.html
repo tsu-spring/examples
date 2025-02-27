@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>Contact Us</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>📞 Get in Touch with Us</h1>
+    <p>Have questions or need assistance? Our team is here to help! Fill out the form below or reach out via phone or
+        email.</p>
+
+    <div class="d-flex gap-3">
+        <div class="flex-grow-1">
+            <form class="contact-form mb-3" th:action="@{/contact-us}" method="post">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="floatingTextArea"
+                              placeholder="Write your message here..."></textarea>
+                    <label for="floatingTextArea">Message</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Contact Information</h5>
+                    <p class="card-text mb-0"><b>Email:</b> support@shopease.com</p>
+                    <p class="card-text mb-0"><b>Phone:</b> +1 (800) 123-4567</p>
+                    <p class="card-text"><b>Address:</b> 123 ShopEase Plaza, New York, NY 10001</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Business Hours</h5>
+                    <p class="card-text mb-0">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p class="card-text">Saturday - Sunday: 10:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+        </div>
+        <img class="img-fluid img-thumbnail" th:src="@{/image/shop.png}" alt="shop image">
+    </div>
+</div>
+</body>
+</html>

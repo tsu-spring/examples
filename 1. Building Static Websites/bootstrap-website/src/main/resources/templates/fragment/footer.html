@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<body>
+<footer th:fragment="footer" class="py-3 border-top">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center ">
+        <p class="col-md-4 mb-0 text-body-secondary">Copyright &copy; 2025</p>
+        <a th:href="@{/}"
+           class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <i class="fa-solid fa-shop"></i>
+        </a>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a th:href="@{/home}" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a th:href="@{/about}" class="nav-link px-2 text-body-secondary">About Us</a></li>
+            <li class="nav-item"><a th:href="@{/products}" class="nav-link px-2 text-body-secondary">Products</a></li>
+            <li class="nav-item"><a th:href="@{/contact}" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
