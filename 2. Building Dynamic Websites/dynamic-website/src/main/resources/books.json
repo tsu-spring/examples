@@ -1,0 +1,398 @@
+[
+  {
+    "id": 1,
+    "title": "To Kill a Mockingbird",
+    "publicationYear": 1960,
+    "isbn": "978-0-06-112008-4",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg",
+    "description": "A novel about the serious issues of rape and racial inequality, narrated by a young girl named Scout Finch in the Deep South during the 1930s.",
+    "authors": [1]
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "publicationYear": 1949,
+    "isbn": "978-0-452-28423-4",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780452284234-L.jpg",
+    "description": "A dystopian novel set in a totalitarian society ruled by the Party and its leader, Big Brother, exploring themes of surveillance, censorship, and individuality.",
+    "authors": [2]
+  },
+  {
+    "id": 3,
+    "title": "Pride and Prejudice",
+    "publicationYear": 1813,
+    "isbn": "978-0-19-953556-9",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780199535569-L.jpg",
+    "description": "A romantic novel that critiques the British landed gentry at the end of the 18th century, focusing on the turbulent relationship between Elizabeth Bennet and Mr. Darcy.",
+    "authors": [3]
+  },
+  {
+    "id": 4,
+    "title": "The Great Gatsby",
+    "publicationYear": 1925,
+    "isbn": "978-0-7432-7356-5",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg",
+    "description": "A novel about the American dream and the disillusionment of the Jazz Age, centered around the mysterious millionaire Jay Gatsby and his obsession with Daisy Buchanan.",
+    "authors": [4]
+  },
+  {
+    "id": 5,
+    "title": "Moby-Dick",
+    "publicationYear": 1851,
+    "isbn": "978-0-14-243724-7",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780142437247-L.jpg",
+    "description": "A novel about the obsessive quest of Captain Ahab for revenge against Moby Dick, the giant white sperm whale that bit off his leg.",
+    "authors": [5]
+  },
+  {
+    "id": 6,
+    "title": "Crime and Punishment",
+    "publicationYear": 1866,
+    "isbn": "978-0-14-044913-6",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780140449136-L.jpg",
+    "description": "A psychological thriller that follows the moral dilemmas of Raskolnikov, a former student who believes he is above the law and commits murder.",
+    "authors": [6]
+  },
+  {
+    "id": 7,
+    "title": "The Brothers Karamazov",
+    "publicationYear": 1880,
+    "isbn": "978-0-14-044924-2",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780140449242-L.jpg",
+    "description": "A philosophical novel that explores deep questions of faith, morality, and free will through the lives of the Karamazov brothers.",
+    "authors": [6]
+  },
+  {
+    "id": 8,
+    "title": "Brave New World",
+    "publicationYear": 1932,
+    "isbn": "978-0-06-085052-4",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780060850524-L.jpg",
+    "description": "A dystopian novel that presents a future society driven by technological advancements, consumerism, and the suppression of individuality.",
+    "authors": [8]
+  },
+  {
+    "id": 9,
+    "title": "Jane Eyre",
+    "publicationYear": 1847,
+    "isbn": "978-0-14-144114-6",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780141441146-L.jpg",
+    "description": "A novel that follows the life of an orphaned girl, Jane Eyre, as she overcomes hardships and finds love and independence.",
+    "authors": [9]
+  },
+  {
+    "id": 10,
+    "title": "Wuthering Heights",
+    "publicationYear": 1847,
+    "isbn": "978-0-14-143955-6",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780141439556-L.jpg",
+    "description": "A tale of passion and revenge set on the Yorkshire moors, focusing on the tumultuous relationship between Heathcliff and Catherine Earnshaw.",
+    "authors": [10]
+  },
+  {
+    "id": 11,
+    "title": "Great Expectations",
+    "publicationYear": 1861,
+    "isbn": "978-0-14-143956-3",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780141439563-L.jpg",
+    "description": "A coming-of-age story that follows the life of Pip, an orphan who dreams of becoming a gentleman and navigating the complexities of wealth and class.",
+    "authors": [11]
+  },
+  {
+    "id": 12,
+    "title": "Little Women",
+    "publicationYear": 1868,
+    "isbn": "978-0-14-240876-6",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780142408766-L.jpg",
+    "description": "A novel that follows the lives of the four March sisters as they grow up during the Civil War, exploring themes of family, love, and personal ambition.",
+    "authors": [12]
+  },
+  {
+    "id": 13,
+    "title": "The Odyssey",
+    "publicationYear": -800,
+    "isbn": "978-0-14-026886-7",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780140268867-L.jpg",
+    "description": "An epic poem attributed to Homer, detailing the adventures of Odysseus as he attempts to return home after the Trojan War.",
+    "authors": [13]
+  },
+  {
+    "id": 14,
+    "title": "The Iliad",
+    "publicationYear": -750,
+    "isbn": "978-0-14-027536-0",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780140275360-L.jpg",
+    "description": "An ancient Greek epic poem by Homer, set during the Trojan War, focusing on the hero Achilles and his conflict with Agamemnon.",
+    "authors": [13]
+  },
+  {
+    "id": 15,
+    "title": "The Count of Monte Cristo",
+    "publicationYear": 1844,
+    "isbn": "978-0-14-044926-6",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780140449266-L.jpg",
+    "description": "A tale of an innocent man wrongfully imprisoned who seeks revenge against those who betrayed him, exploring themes of justice and redemption.",
+    "authors": [15]
+  },
+  {
+    "id": 16,
+    "title": "Anna Karenina",
+    "publicationYear": 1877,
+    "isbn": "978-0-14-044917-4",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780140449174-L.jpg",
+    "description": "A tragic love story that explores the life of Anna Karenina, a married woman who falls in love with Count Vronsky, set against the backdrop of Russian society.",
+    "authors": [16]
+  },
+  {
+    "id": 17,
+    "title": "Dracula",
+    "publicationYear": 1897,
+    "isbn": "978-0-14-143984-6",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780141439846-L.jpg",
+    "description": "A Gothic horror novel that tells the story of Count Dracula's attempt to move from Transylvania to England, and the battle between him and a group of people led by Professor Van Helsing.",
+    "authors": [17]
+  },
+  {
+    "id": 18,
+    "title": "Frankenstein",
+    "publicationYear": 1818,
+    "isbn": "978-0-14-143947-1",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780141439471-L.jpg",
+    "description": "A novel about Victor Frankenstein, a scientist who creates a sentient creature in an unorthodox experiment, exploring themes of ambition, isolation, and the quest for knowledge.",
+    "authors": [18]
+  },
+  {
+    "id": 19,
+    "title": "The Picture of Dorian Gray",
+    "publicationYear": 1890,
+    "isbn": "978-0-14-143957-0",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780141439570-L.jpg",
+    "description": "A philosophical novel that tells the story of Dorian Gray, a young man whose portrait ages while he remains young and beautiful, exploring themes of vanity and moral corruption.",
+    "authors": [19]
+  },
+  {
+    "id": 20,
+    "title": "Fahrenheit 451",
+    "publicationYear": 1953,
+    "isbn": "978-0-7432-4722-1",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780743247221-L.jpg",
+    "description": "A dystopian novel that presents a future where books are banned and 'firemen' burn any that are found, exploring themes of censorship and the power of knowledge.",
+    "authors": [20]
+  },
+  {
+    "id": 21,
+    "title": "The Sun Also Rises",
+    "publicationYear": 1926,
+    "isbn": "978-0-7432-9733-2",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780743297332-L.jpg",
+    "description": "A novel about a group of American and British expatriates in 1920s Paris, exploring themes of love, loss, and the disillusionment of the Lost Generation.",
+    "authors": [21]
+  },
+  {
+    "id": 22,
+    "title": "Slaughterhouse-Five",
+    "publicationYear": 1969,
+    "isbn": "978-0-385-33384-9",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780385333849-L.jpg",
+    "description": "A satirical novel that follows the life of Billy Pilgrim, who becomes 'unstuck in time' and experiences different moments of his life, including his time as a soldier in World War II.",
+    "authors": [22]
+  },
+  {
+    "id": 23,
+    "title": "One Hundred Years of Solitude",
+    "publicationYear": 1967,
+    "isbn": "978-0-06-088328-7",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780060883287-L.jpg",
+    "description": "A multi-generational story that follows the Buendía family in the fictional town of Macondo, exploring themes of magic realism and the cyclical nature of history.",
+    "authors": [23]
+  },
+  {
+    "id": 24,
+    "title": "Don Quixote",
+    "publicationYear": 1605,
+    "isbn": "978-0-14-243723-0",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780142437230-L.jpg",
+    "description": "A novel that follows the adventures of an aging nobleman who becomes a self-declared knight-errant, exploring themes of reality versus illusion.",
+    "authors": [24]
+  },
+  {
+    "id": 25,
+    "title": "The Metamorphosis",
+    "publicationYear": 1915,
+    "isbn": "978-0-14-243756-8",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780142437568-L.jpg",
+    "description": "A novella that tells the story of Gregor Samsa, who wakes up one morning to find himself transformed into a giant insect, exploring themes of alienation and identity.",
+    "authors": [25]
+  },
+  {
+    "id": 26,
+    "title": "The Alchemist",
+    "publicationYear": 1988,
+    "isbn": "978-0062315007",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg",
+    "description": "A philosophical novel about a shepherd named Santiago who dreams of finding treasure in Egypt, exploring themes of destiny and personal legend.",
+    "authors": [26]
+  },
+  {
+    "id": 27,
+    "title": "The Kite Runner",
+    "publicationYear": 2003,
+    "isbn": "978-1594480003",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9781594480003-L.jpg",
+    "description": "A story of friendship and redemption set against the backdrop of Afghanistan's tumultuous history, focusing on Amir's guilt over betraying his childhood friend Hassan.",
+    "authors": [27]
+  },
+  {
+    "id": 28,
+    "title": "The Handmaid's Tale",
+    "publicationYear": 1985,
+    "isbn": "978-0385490818",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780385490818-L.jpg",
+    "description": "A dystopian novel set in a totalitarian society where women are subjugated, following Offred, a handmaid forced into reproductive servitude.",
+    "authors": [28]
+  },
+  {
+    "id": 29,
+    "title": "The Road",
+    "publicationYear": 2006,
+    "isbn": "978-0307387899",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780307387899-L.jpg",
+    "description": "A post-apocalyptic novel that follows a father and son as they journey through a desolate landscape, struggling to survive while clinging to hope.",
+    "authors": [29]
+  },
+  {
+    "id": 30,
+    "title": "Life of Pi",
+    "publicationYear": 2001,
+    "isbn": "978-0156027328",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780156027328-L.jpg",
+    "description": "A survival story about Pi Patel, a boy stranded on a lifeboat with a Bengal tiger, blending adventure with philosophical musings on faith and storytelling.",
+    "authors": [30]
+  },
+  {
+    "id": 31,
+    "title": "The Da Vinci Code",
+    "publicationYear": 2003,
+    "isbn": "978-0307474278",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780307474278-L.jpg",
+    "description": "A thriller that follows symbologist Robert Langdon as he unravels clues tied to Leonardo da Vinci’s art, uncovering a conspiracy about the Holy Grail.",
+    "authors": [31]
+  },
+  {
+    "id": 32,
+    "title": "The Hunger Games",
+    "publicationYear": 2008,
+    "isbn": "978-0439023481",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780439023481-L.jpg",
+    "description": "A dystopian saga where Katniss Everdeen volunteers for a televised death match to save her sister, critiquing authoritarianism and class inequality.",
+    "authors": [32]
+  },
+  {
+    "id": 33,
+    "title": "The Night Circus",
+    "publicationYear": 2011,
+    "isbn": "978-0307744432",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780307744432-L.jpg",
+    "description": "A magical realism tale about two illusionists bound to a mystical competition within a wandering circus, blurring the lines between reality and fantasy.",
+    "authors": [33]
+  },
+  {
+    "id": 34,
+    "title": "Educated",
+    "publicationYear": 2018,
+    "isbn": "978-0399590504",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780399590504-L.jpg",
+    "description": "A memoir of Tara Westover’s journey from a survivalist Idaho family with no formal education to earning a PhD from Cambridge University.",
+    "authors": [34]
+  },
+  {
+    "id": 35,
+    "title": "The Hobbit",
+    "publicationYear": 1937,
+    "isbn": "9780547928227",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg",
+    "description": "A fantasy novel following Bilbo Baggins on an unexpected adventure filled with dwarves, treasure, and epic quests.",
+    "authors": [35]
+  },
+  {
+    "id": 36,
+    "title": "A Tale of Two Cities",
+    "publicationYear": 1859,
+    "isbn": "9780141439600",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780141439600-L.jpg",
+    "description": "A historical novel set in London and Paris before and during the French Revolution, exploring themes of resurrection and sacrifice.",
+    "authors": [11]
+  },
+  {
+    "id": 37,
+    "title": "Catch-22",
+    "publicationYear": 1961,
+    "isbn": "9781451626650",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9781451626650-L.jpg",
+    "description": "A satirical war novel that follows Captain John Yossarian and his squadron during World War II, highlighting the absurdity of bureaucracy.",
+    "authors": [37]
+  },
+  {
+    "id": 38,
+    "title": "The Grapes of Wrath",
+    "publicationYear": 1939,
+    "isbn": "9780143039433",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780143039433-L.jpg",
+    "description": "A novel depicting the hardships of American farmers during the Great Depression as they migrate west in search of a better life.",
+    "authors": [38]
+  },
+  {
+    "id": 39,
+    "title": "Beloved",
+    "publicationYear": 1987,
+    "isbn": "9781400033416",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9781400033416-L.jpg",
+    "description": "A haunting novel about a former slave haunted by the memories of her past and the ghost of her dead child.",
+    "authors": [39]
+  },
+  {
+    "id": 40,
+    "title": "Invisible Man",
+    "publicationYear": 1952,
+    "isbn": "9780679732761",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780679732761-L.jpg",
+    "description": "A novel that explores the social and intellectual challenges faced by African Americans, following an unnamed protagonist's quest for identity and recognition.",
+    "authors": [40]
+  },
+  {
+    "id": 41,
+    "title": "A Clockwork Orange",
+    "publicationYear": 1962,
+    "isbn": "9780393312836",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780393312836-L.jpg",
+    "description": "A dystopian novel that follows a young delinquent's journey through a futuristic society, examining themes of free will and state control.",
+    "authors": [41]
+  },
+  {
+    "id": 42,
+    "title": "The Stranger",
+    "publicationYear": 1942,
+    "isbn": "9780679720201",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780679720201-L.jpg",
+    "description": "A novel that follows Meursault, an emotionally detached man, as he navigates a senseless world, prompting profound questions about existence.",
+    "authors": [42]
+  },
+  {
+    "id": 43,
+    "title": "Lolita",
+    "publicationYear": 1955,
+    "isbn": "9780679723165",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780679723165-L.jpg",
+    "description": "A controversial novel that tells the story of Humbert Humbert and his disturbing obsession, exploring themes of desire and manipulation.",
+    "authors": [43]
+  },
+  {
+    "id": 44,
+    "title": "Rebecca",
+    "publicationYear": 1938,
+    "isbn": "9780380730407",
+    "coverImg": "https://covers.openlibrary.org/b/isbn/9780380730407-L.jpg",
+    "description": "A gothic novel about a young bride who finds herself overshadowed by the memory of her husband's first wife in a mysterious mansion.",
+    "authors": [44]
+  }
+]

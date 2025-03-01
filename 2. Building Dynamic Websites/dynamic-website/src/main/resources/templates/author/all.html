@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>All Authors</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+        <div class="col" th:each="author: ${authors}">
+            <div class="card rounded-0">
+                <div class="card-body">
+                    <a th:href="@{/author(id=${author.id})}" class="text-reset text-decoration-none">
+                        <h5 class="card-title fw-bold" th:text="${author.fullName}">Author fullname</h5>
+                    </a>
+                    <p class="card-text text-truncate">
+                        <small class="text-body-secondary" th:text="${author.info}"></small>
+                    </p>
+                    <a th:href="@{/author(id=${author.id})}" class="card-link">Read more &raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

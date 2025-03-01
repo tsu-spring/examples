@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>All Books</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="row row-cols-2 row-cols-md-3 g-4">
+        <div class="col" th:each="book: ${books}">
+            <div class="card rounded-0 border-0 shadow">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="img-fluid" th:src="${book.coverImg}" alt="book cover image">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <a th:href="@{/book(id=${book.id})}" class="text-reset text-decoration-none">
+                                <h5 class="card-title fw-bold" th:text="${book.title}">Book Title</h5>
+                            </a>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">
+                                <span>by </span>
+                                <a class="text-decoration-none"
+                                   th:href="@{/author(id=${author.id})}" th:each="author: ${book.authors}">
+                                    <span th:text="${author.fullName}">Author's full name</span>
+                                </a>
+                            </h6>
+                            <p class="card-text mb-0">
+                                <small class="text-body-secondary">
+                                    Published in <span th:text="${book.publicationYear}">Publication Year</span>
+                                </small>
+                            </p>
+                            <p class="card-text mb-0">
+                                <small class="text-body-secondary">
+                                    ISBN: <span th:text="${book.isbn}">ISBN</span>
+                                </small>
+                            </p>
+                            <p class="card-text text-truncate mb-0">
+                                <small class="text-body-secondary" th:text="${book.description}"></small>
+                            </p>
+                            <a th:href="@{/book(id=${book.id})}" class="card-link">Read more &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="mt-4 d-flex justify-content-center">
+        <ul class="pagination">
+            <!-- Previous Page Link -->
+            <li class="page-item" th:classappend="${page == 1} ? 'disabled'">
+                <a class="page-link" th:href="@{/books(page=${page - 1})}"
+                   th:aria-disabled="${page == 1}">Previous</a>
+            </li>
+            <!-- Page Numbers -->
+            <li class="page-item" th:each="p : ${#numbers.sequence(1, totalPages)}"
+                th:classappend="${p == page} ? 'active'">
+                <a class="page-link" th:href="@{/books(page=${p})}"
+                   th:text="${p}">1</a>
+            </li>
+            <!-- Next Page Link -->
+            <li class="page-item" th:classappend="${page == totalPages} ? 'disabled'">
+                <a class="page-link" th:href="@{/books(page=${page + 1})}"
+                   th:aria-disabled="${page == totalPages}">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>

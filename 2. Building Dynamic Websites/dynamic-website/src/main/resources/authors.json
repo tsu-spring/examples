@@ -1,0 +1,296 @@
+[
+  {
+    "id": 1,
+    "firstName": "Harper",
+    "lastName": "Lee",
+    "info": "Harper Lee was an influential American novelist whose classic work 'To Kill a Mockingbird' offers a profound exploration of racial injustice and moral growth in the Deep South, leaving a lasting legacy on American literature.",
+    "photoUrl": "https://www.rottentomatoes.com/celebrity/harper_lee/pictures"
+  },
+  {
+    "id": 2,
+    "firstName": "George",
+    "lastName": "Orwell",
+    "info": "George Orwell was an English novelist, essayist, and critic celebrated for his dystopian novels such as '1984' and the allegorical 'Animal Farm', which continue to serve as powerful commentaries on totalitarianism and propaganda.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/George_Orwell_press_photo.jpg"
+  },
+  {
+    "id": 3,
+    "firstName": "Jane",
+    "lastName": "Austen",
+    "info": "Jane Austen was an English novelist renowned for her keen social observations and masterful use of irony. Her works, including 'Pride and Prejudice' and 'Sense and Sensibility', offer incisive commentary on the British landed gentry of her time.",
+    "photoUrl": "https://www.britannica.com/biography/Jane-Austen"
+  },
+  {
+    "id": 4,
+    "firstName": "F. Scott",
+    "lastName": "Fitzgerald",
+    "info": "F. Scott Fitzgerald was an iconic American novelist and short story writer whose portrayal of the Jazz Age in works like 'The Great Gatsby' captured the exuberance and disillusionment of the era, cementing his status as a literary chronicler of modernity.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/F_Scott_Fitzgerald_1921.jpg"
+  },
+  {
+    "id": 5,
+    "firstName": "Herman",
+    "lastName": "Melville",
+    "info": "Herman Melville was an American novelist whose epic work 'Moby-Dick' delves into themes of obsession, fate, and the human condition, earning a place as a cornerstone of American literature and maritime narrative.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Herman_Melville.jpg"
+  },
+  {
+    "id": 6,
+    "firstName": "Fyodor",
+    "lastName": "Dostoevsky",
+    "info": "Fyodor Dostoevsky was a Russian novelist and philosopher whose psychological depth and exploration of moral dilemmas in masterpieces like 'Crime and Punishment' have influenced existential thought and modern literature.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Fyodor_Dostoevsky_1876.jpg"
+  },
+  {
+    "id": 8,
+    "firstName": "Aldous",
+    "lastName": "Huxley",
+    "info": "Aldous Huxley was an English writer and philosopher best known for his dystopian novel 'Brave New World', which critically examines the impact of technology, social engineering, and the erosion of individuality in modern society.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Aldous_Huxley_1954.jpg"
+  },
+  {
+    "id": 9,
+    "firstName": "Charlotte",
+    "lastName": "Brontë",
+    "info": "Charlotte Brontë was an influential English novelist and poet whose novel 'Jane Eyre' blends Gothic elements with strong character development and social criticism, paving the way for future generations of female writers.",
+    "photoUrl": "https://www.britannica.com/biography/Charlotte-Bronte"
+  },
+  {
+    "id": 10,
+    "firstName": "Emily",
+    "lastName": "Brontë",
+    "info": "Emily Brontë was an English novelist and poet best known for her singular work 'Wuthering Heights', a turbulent exploration of passion, revenge, and the darker sides of human nature set against a stark, atmospheric landscape.",
+    "photoUrl": "https://freebooksummary.com/emily-bronte"
+  },
+  {
+    "id": 11,
+    "firstName": "Charles",
+    "lastName": "Dickens",
+    "info": "Charles Dickens was an eminent English writer and social critic whose vivid characters and portrayals of Victorian life in novels like 'Great Expectations' and 'A Tale of Two Cities' have left an indelible mark on literature and society.",
+    "photoUrl": "https://flickspedia.com/best-books-of-charles-dickens/"
+  },
+  {
+    "id": 12,
+    "firstName": "Louisa May",
+    "lastName": "Alcott",
+    "info": "Louisa May Alcott was an American novelist best known for 'Little Women', a cherished coming-of-age tale that explores family dynamics, gender roles, and personal growth during the American Civil War era.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Louisa_May_Alcott.jpg"
+  },
+  {
+    "id": 13,
+    "firstName": "Homer",
+    "lastName": "",
+    "info": "Homer is the legendary ancient Greek poet traditionally credited with composing the foundational epics 'The Iliad' and 'The Odyssey', which have profoundly influenced Western literature and our understanding of heroism and myth.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Homer_British_Museum.jpg"
+  },
+  {
+    "id": 15,
+    "firstName": "Alexandre",
+    "lastName": "Dumas",
+    "info": "Alexandre Dumas was a prolific French writer renowned for his adventure novels such as 'The Count of Monte Cristo' and 'The Three Musketeers', celebrated for their vivid storytelling and memorable characters.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Alexandre_Dumas_p%C3%A8re_%281802-1870%29_-_Google_Art_Project_2.jpg"
+  },
+  {
+    "id": 16,
+    "firstName": "Leo",
+    "lastName": "Tolstoy",
+    "info": "Leo Tolstoy was a Russian novelist whose epic works, including 'War and Peace' and 'Anna Karenina', explore the complexities of history, society, and the human spirit, making him one of literature’s most influential figures.",
+    "photoUrl": "https://external-preview.redd.it/leo_tolstoy_lev_tolstoy_1828_1910_russian_writer.jpg?auto=webp&s=4e5b5d8f0a4a1a5c1c5e5d8f0a4a1a5c1c5e5d8f"
+  },
+  {
+    "id": 17,
+    "firstName": "Bram",
+    "lastName": "Stoker",
+    "info": "Bram Stoker was an Irish author best known for his Gothic horror classic 'Dracula', a novel that has shaped modern interpretations of vampire lore and continues to inspire the horror genre.",
+    "photoUrl": "https://m.media-amazon.com/images/M/MV5BMjA5MjYwNDAwMF5BMl5BanBnXkFtZTcwMzY2NjQzMw@@._V1_.jpg"
+  },
+  {
+    "id": 18,
+    "firstName": "Mary",
+    "lastName": "Shelley",
+    "info": "Mary Shelley was an English novelist and early pioneer of science fiction, renowned for 'Frankenstein', a groundbreaking work that merges Gothic horror with profound questions about creation and responsibility.",
+    "photoUrl": "https://scaretube.com/wp-content/uploads/2021/01/mary-shelley.jpg"
+  },
+  {
+    "id": 19,
+    "firstName": "Oscar",
+    "lastName": "Wilde",
+    "info": "Oscar Wilde was an Irish poet, playwright, and wit celebrated for his brilliant prose and sharp social commentary in works like 'The Picture of Dorian Gray' and his numerous celebrated plays.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Oscar_Wilde_portrait.jpg"
+  },
+  {
+    "id": 20,
+    "firstName": "Ray",
+    "lastName": "Bradbury",
+    "info": "Ray Bradbury was an American author and screenwriter known for his imaginative and prophetic works, including 'Fahrenheit 451', which offers a critical view of censorship and the impact of technology on society.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Ray_Bradbury_%281973%29_-cropped-.jpg"
+  },
+  {
+    "id": 21,
+    "firstName": "Ernest",
+    "lastName": "Hemingway",
+    "info": "Ernest Hemingway was an influential American novelist and short story writer whose distinctive, terse prose and themes of courage and loss in works like 'The Old Man and the Sea' have shaped modern literature.",
+    "photoUrl": "https://karsh.org/wordpress/wp-content/uploads/2017/08/Ernest-Hemingway.jpg"
+  },
+  {
+    "id": 22,
+    "firstName": "Kurt",
+    "lastName": "Vonnegut",
+    "info": "Kurt Vonnegut was an American author renowned for his satirical and darkly humorous novels such as 'Slaughterhouse-Five', which blend wit with incisive commentary on war, society, and the absurdities of modern life.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Kurt_Vonnegut_1972.jpg"
+  },
+  {
+    "id": 23,
+    "firstName": "Gabriel",
+    "lastName": "García Márquez",
+    "info": "Gabriel García Márquez was a Colombian novelist celebrated for his use of magical realism, most notably in 'One Hundred Years of Solitude', weaving myth, politics, and human experience into richly imaginative narratives.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Gabriel_Garcia_Marquez.jpg"
+  },
+  {
+    "id": 24,
+    "firstName": "Miguel",
+    "lastName": "de Cervantes",
+    "info": "Miguel de Cervantes was a Spanish writer best known for 'Don Quixote', one of the first modern novels that humorously satirizes chivalric romance while offering deep insights into the human condition.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Miguel_de_Cervantes.jpg"
+  },
+  {
+    "id": 25,
+    "firstName": "Franz",
+    "lastName": "Kafka",
+    "info": "Franz Kafka was a German-speaking Bohemian writer whose surreal and existential works, including 'The Metamorphosis' and 'The Trial', explore themes of alienation, bureaucracy, and the absurdity of modern life.",
+    "photoUrl": "https://www.jewishvirtuallibrary.org/jsource/images/kafka.jpg"
+  },
+  {
+    "id": 26,
+    "firstName": "Paulo",
+    "lastName": "Coelho",
+    "info": "Paulo Coelho is a Brazilian author celebrated for his allegorical novels, particularly 'The Alchemist', which has inspired millions with its themes of destiny, spirituality, and the transformative journey of life.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Paulo_Coelho.jpg"
+  },
+  {
+    "id": 27,
+    "firstName": "Khaled",
+    "lastName": "Hosseini",
+    "info": "Khaled Hosseini is an Afghan-American author known for his emotionally resonant narratives, with 'The Kite Runner' offering a poignant exploration of friendship, guilt, and redemption amid Afghanistan's turbulent history.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Khaled_Hosseini_2007.jpg"
+  },
+  {
+    "id": 28,
+    "firstName": "Margaret",
+    "lastName": "Atwood",
+    "info": "Margaret Atwood is a Canadian author, poet, and critic whose speculative and feminist works, including 'The Handmaid's Tale', challenge societal norms and explore themes of power, gender, and environmental decay.",
+    "photoUrl": "https://cdn.britannica.com/47/188447-050-4A5A531A/Margaret-Atwood-2015.jpg"
+  },
+  {
+    "id": 29,
+    "firstName": "Cormac",
+    "lastName": "McCarthy",
+    "info": "Cormac McCarthy is an American novelist celebrated for his stark, poetic prose and exploration of violence and redemption in works such as 'The Road' and 'No Country for Old Men', which examine the human condition against brutal landscapes.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Cormac_McCarthy.jpg"
+  },
+  {
+    "id": 30,
+    "firstName": "Yann",
+    "lastName": "Martel",
+    "info": "Yann Martel is a Canadian author best known for 'Life of Pi', a novel that masterfully blends adventure, spirituality, and philosophical inquiry to explore the resilience and ingenuity of the human spirit.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Yann_Martel.jpg"
+  },
+  {
+    "id": 31,
+    "firstName": "Dan",
+    "lastName": "Brown",
+    "info": "Dan Brown is an American author recognized for his fast-paced thriller novels that fuse art, history, and conspiracy theories, with 'The Da Vinci Code' captivating global audiences through its intricate puzzles and historical intrigue.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Dan_Brown_November_2015.jpg"
+  },
+  {
+    "id": 32,
+    "firstName": "Suzanne",
+    "lastName": "Collins",
+    "info": "Suzanne Collins is an American author best known for 'The Hunger Games' series, a dystopian saga that critiques societal structures and explores themes of survival, oppression, and the power of media.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Suzanne_Collins.jpg"
+  },
+  {
+    "id": 33,
+    "firstName": "Erin",
+    "lastName": "Morgenstern",
+    "info": "Erin Morgenstern is an American author whose debut novel 'The Night Circus' enchanted readers with its lush, imaginative world and intricate narrative, blending magic, romance, and mystery in a unique literary tapestry.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Erin_Morgenstern.jpg"
+  },
+  {
+    "id": 34,
+    "firstName": "Tara",
+    "lastName": "Westover",
+    "info": "Tara Westover is an American memoirist whose bestselling book 'Educated' recounts her transformative journey from an isolated, survivalist upbringing to academic achievement, offering profound insights into the power of education and self-discovery.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Tara_Westover.jpg"
+  },
+  {
+    "id": 35,
+    "firstName": "J.R.R.",
+    "lastName": "Tolkien",
+    "info": "J.R.R. Tolkien was an English writer, philologist, and academic best known for creating the high-fantasy worlds of 'The Hobbit' and 'The Lord of the Rings', works that set the standard for epic storytelling and intricate world-building.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Tolkien_1916.jpg"
+  },
+  {
+    "id": 36,
+    "firstName": "Joseph",
+    "lastName": "Heller",
+    "info": "Joseph Heller was an American satirical novelist best known for 'Catch-22', a work whose title has become synonymous with the absurdity of bureaucratic logic and the paradoxes inherent in modern warfare.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Joseph_Heller_%281982%29.jpg"
+  },
+  {
+    "id": 37,
+    "firstName": "John",
+    "lastName": "Steinbeck",
+    "info": "John Steinbeck was an influential American author whose novels, including 'The Grapes of Wrath' and 'Of Mice and Men', provide compassionate yet unflinching portrayals of the struggles faced by the working class during the Great Depression.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/John_Steinbeck_1962.jpg"
+  },
+  {
+    "id": 38,
+    "firstName": "Toni",
+    "lastName": "Morrison",
+    "info": "Toni Morrison was an American novelist and essayist celebrated for her lyrical prose and deep exploration of African American experiences, as seen in works like 'Beloved' and 'Song of Solomon', which continue to influence and inspire.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Toni_Morrison.jpg"
+  },
+  {
+    "id": 39,
+    "firstName": "Ralph",
+    "lastName": "Ellison",
+    "info": "Ralph Ellison was an American novelist best known for 'Invisible Man', a seminal work that powerfully examines racial identity, individuality, and the social invisibility experienced by African Americans in mid-20th century America.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Ralph_Ellison_photo_portrait_seated.jpg"
+  },
+  {
+    "id": 40,
+    "firstName": "Anthony",
+    "lastName": "Burgess",
+    "info": "Anthony Burgess was an English writer and composer whose dystopian novel 'A Clockwork Orange' is renowned for its inventive language and provocative exploration of free will, violence, and societal control.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/AnthonyBurgess1986.jpg"
+  },
+  {
+    "id": 41,
+    "firstName": "Albert",
+    "lastName": "Camus",
+    "info": "Albert Camus was a French philosopher, author, and journalist whose existential works, including 'The Stranger' and 'The Myth of Sisyphus', grapple with the absurdity of human existence and the search for meaning in an indifferent universe.",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Albert_Camus%2C_gagnant_de_prix_Nobel%2C_portrait_en_buste%2C_pos%C3%A9_au_bureau%2C_faisant_face_%C3%A0_gauche%2C_cigarette_de_tabagisme.jpg"
+  },
+  {
+    "id": 42,
+    "firstName": "Vladimir",
+    "lastName": "Nabokov",
+    "info": "Vladimir Nabokov was a Russian-American novelist celebrated for his intricate prose and innovative narrative style in works like 'Lolita', which continue to evoke both admiration and controversy for their literary brilliance.",
+    "photoUrl": "https://karsh.org/vladimir-nabokov-2/"
+  },
+  {
+    "id": 43,
+    "firstName": "Daphne",
+    "lastName": "du Maurier",
+    "info": "Daphne du Maurier was an English author renowned for her evocative storytelling and atmospheric narratives, best exemplified by 'Rebecca', a novel that blends mystery, romance, and the haunting influence of the past.",
+    "photoUrl": "https://www.britannica.com/biography/Daphne-du-Maurier"
+  },
+  {
+    "id": 44,
+    "firstName": "Daphne",
+    "lastName": "du Maurier",
+    "info": "Daphne du Maurier (1907–1989) was an English novelist and playwright, renowned for her evocative storytelling and atmospheric narratives. Her most famous work, 'Rebecca' (1938), is a classic of English literature that masterfully blends mystery, romance, and psychological intrigue.",
+    "photoUrl": "https://www.britannica.com/biography/Daphne-du-Maurier"
+  }
+]

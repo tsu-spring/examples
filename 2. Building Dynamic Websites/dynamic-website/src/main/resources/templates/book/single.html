@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title th:text="${book.title}"></title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-fluid mx-auto d-block shadow" th:src="${book.coverImg}" alt="book cover image">
+        </div>
+        <div class="col-md-8">
+            <h1 class="fw-bold" th:text="${book.title}">Book Title</h1>
+            <h3 class="mb-2 text-body-secondary">
+                <span>by </span>
+                <a th:href="@{/author(id=${author.id})}" th:each="author: ${book.authors}">
+                    <span th:text="${author.fullName}">Author's full name</span>
+                </a>
+            </h3>
+            <hr>
+            <h4>General Info</h4>
+            <p class="mb-0">Publication year: <span th:text="${book.publicationYear}">Publication Year</span></p>
+            <p>ISBN: <span th:text="${book.isbn}">ISBN</span></p>
+            <hr>
+            <h4>Description</h4>
+            <p th:text="${book.description}">Book Description</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

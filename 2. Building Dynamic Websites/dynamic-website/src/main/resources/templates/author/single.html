@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title th:text="${author.fullName}"></title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1 class="fw-bold" th:text="${author.fullName}">Author's Name</h1>
+    <hr>
+    <h4>General Info</h4>
+    <p th:text="${author.info}">Information about author</p>
+</div>
+</body>
+</html>
