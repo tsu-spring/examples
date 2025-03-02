@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>My Album</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="d-flex flex-column gap-3">
+        <div th:each="year: ${imagesByYears.keySet()}" class="card">
+            <h1 class="card-header text-center">Year <span th:text="${year}">Date</span></h1>
+            <div class="card-body">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div th:each="image : ${imagesByYears.get(year)}" class="col">
+                        <figure class="figure">
+                            <img th:src="@{${image.relativePath}}" class="figure-img img-fluid rounded img-thumbnail"
+                                 alt="album image">
+                            <figcaption th:text="${image.date}" class="figure-caption text-end">A caption for image.
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

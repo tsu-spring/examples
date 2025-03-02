@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: interactive-website
+  thymeleaf:
+    cache: false
+  web:
+    resources:
+      static-locations: classpath:/static/, file:${image.root-folder}
+image:
+  root-folder: /album-images

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>My Album</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>Upload a new image to album</h1>
+    <hr>
+    <form class="mb-3" th:action="@{/upload}" th:object="${uploadForm}" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" th:errorclass="is-invalid" th:field="*{image}" id="formFile">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('image')}" th:errors="*{image}"></div>
+        </div>
+        <div class="mb-3">
+            <label for="formDate" class="form-label">Email address</label>
+            <input type="date" class="form-control" th:errorclass="is-invalid" th:field="*{date}" id="formDate">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('date')}" th:errors="*{date}"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+    <div th:if="${successMessage}" class="alert alert-success alert-dismissible fade show" role="alert">
+        <span th:text="${successMessage}"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div th:if="${errorMessage}" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <span th:text="${errorMessage}"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+</div>
+</body>
+</html>
