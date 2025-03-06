@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: website-with-database
+  thymeleaf:
+    cache: false
+
+  # DB Configuration
+  datasource:
+    url: jdbc:h2:mem:gossip-db # Better to use file-based approach "jdbc:h2:file:~/gossip-db"
+    driver-class-name: org.h2.Driver
+
+  # JPA Configuration
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # Change to 'update' for production ;) or not :(
+    show-sql: true
+    defer-datasource-initialization: true # Run data.sql after creating tables!
+
+  # H2 Configuration
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      # Enabled data.sql and schema.sql script-based initialization (Not required for H2)
+      # For embedded databases such as H2, this is set to always by default.
+      # https://www.baeldung.com/spring-boot-data-sql-and-schema-sql
+      mode: always
+
+# Custom configuration entry (for pagination)
+topics:
+  page-size: 10

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="hottest-topics" class="card text-bg-danger">
+    <div class="card text-bg-danger">
+        <div class="card-body">
+            <h3 class="card-title"><i class="fa-solid fa-fire"></i> Hottest Topics</h3>
+            <h6 class="card-subtitle ">(Top 5 topics with the most comments)</h6>
+        </div>
+        <div class="list-group list-group-flush">
+            <a th:each="topic : ${top5HottestTopics}" th:href="@{/topic/{id}(id=${topic.id})}" class="list-group-item">
+                <header class="d-flex justify-content-between align-items-start">
+                    <h5 class="d-flex align-items-center gap-2">
+                        <span th:text="${topic.title}">Topic Title</span>
+                        <small class="badge rounded-pill text-bg-secondary" style="font-size: .55em;">
+                            <span th:text="${topic.likes}">4</span> Likes
+                        </small>
+                        <small class="badge rounded-pill text-bg-secondary" style="font-size: .55em;">
+                            <span th:text="${topic.comments.size()}">20</span> Comments
+                        </small>
+                    </h5>
+                    <h6 th:text="${topic.prettyCreateTime}" class="card-subtitle text-body-secondary">2025/01/01</h6>
+                </header>
+                <p th:text="${topic.text}" class="text-truncate mb-0">Topic Text</p>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+    <body>
+<div layout:fragment="content">
+    <div class="row row-cols-1 row-cols-lg-2 g-3 mb-3">
+        <div class="col">
+            <div th:replace="~{fragment/topic/most-liked :: most-liked}"></div>
+        </div>
+        <div class="col">
+            <div th:replace="~{fragment/topic/hottest-topics :: hottest-topics}"></div>
+        </div>
+    </div>
+    <th:block th:replace="~{fragment/topic/list-with-pagination :: list-with-pagination}"></th:block>
+</div>
+</body>
+</html>

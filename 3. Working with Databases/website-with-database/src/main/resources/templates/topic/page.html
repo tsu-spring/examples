@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>Topics</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <th:block th:replace="~{fragment/topic/list-with-pagination :: list-with-pagination}"></th:block>
+</div>
+</body>
+</html>

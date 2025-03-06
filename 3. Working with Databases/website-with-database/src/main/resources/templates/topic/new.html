@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>New Topic</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>Write a new Topic</h1>
+    <hr>
+    <form th:action="@{/topic/new}" th:object="${topicForm}" method="post">
+        <div class="mb-3">
+            <label for="topicTitle" class="form-label">Topic Title</label>
+            <input class="form-control" type="text" th:errorclass="is-invalid" th:field="*{title}" id="topicTitle">
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></div>
+        </div>
+        <div class="mb-3">
+            <label for="topicText" class="form-label">Topic Text</label>
+            <textarea class="form-control" th:errorclass="is-invalid" th:field="*{text}" id="topicText"
+                      rows="10"></textarea>
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('text')}" th:errors="*{text}"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+    <div class="mt-3">
+        <div th:if="${successMessage}" class="alert alert-success alert-dismissible fade show" role="alert">
+            <span th:text="${successMessage}"></span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div th:if="${newTopicURL}" class="alert alert-info alert-dismissible fade show" role="alert">
+            Your new topic is <a th:href="${newTopicURL}">here</a>.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div th:if="${errorMessage}" class="alert alert-danger alert-dismissible fade show" role="alert">
+            <span th:text="${errorMessage}"></span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

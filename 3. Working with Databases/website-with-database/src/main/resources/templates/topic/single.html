@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title th:text="${topic.title}">Topic Title</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="row gap-2">
+        <header class="d-flex justify-content-between align-items-start">
+            <h1 th:text="${topic.title}">Topic Title</h1>
+            <div class="d-flex align-items-center gap-2">
+                <h6 th:text="${topic.createTime}">2025/01/01</h6>
+                <a class="btn btn-danger" th:href="@{/topic/{id}/delete(id=${topic.id})}"
+                   onclick="return confirm('Do you really want to delete this topic?')">
+                    <i class="fa-solid fa-trash"></i>
+                </a>
+            </div>
+        </header>
+        <hr>
+        <p th:text="${topic.text}">Topic Text</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-2 text-muted">
+                <div>Likes: <span th:text="${topic.likes}">10</span></div>
+                <div>Comments: <span th:text="${topic.comments.size()}">12</span></div>
+            </div>
+            <div>
+                <a th:href="@{/topic/{id}/like(id=${topic.id})}" class="btn btn-primary btn-sm"><i
+                        class="fa-solid fa-thumbs-up"></i> Like</a>
+            </div>
+        </div>
+        <hr>
+        <h3>Write your comment:</h3>
+        <div class="card">
+            <div class="card-body">
+                <form th:action="@{/topic/{id}(id=${topic.id})}" th:object="${commentForm}" method="post">
+                    <div class="form-floating mb-3">
+                        <input id="commentAuthor" type="text" class="form-control" th:errorclass="is-invalid"
+                               th:field="*{author}" placeholder="Your Name">
+                        <label for="commentAuthor">Comment Author</label>
+                        <div class="invalid-feedback" th:if="${#fields.hasErrors('author')}"
+                             th:errors="*{author}"></div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea id="commentText" class="form-control" th:errorclass="is-invalid"
+                                  th:field="*{text}" placeholder="Your message goes here..."></textarea>
+                        <label for="commentText">Comment Text</label>
+                        <div class="invalid-feedback" th:if="${#fields.hasErrors('text')}" th:errors="*{text}"></div>
+                    </div>
+                    <input type="hidden" th:field="*{topicId}">
+                    <button type="submit" class="btn btn-primary">Write</button>
+                </form>
+                <div class="mt-3">
+                    <div th:if="${successMessage}" class="alert alert-success alert-dismissible fade show" role="alert">
+                        <span th:text="${successMessage}"></span>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <div th:if="${errorMessage}" class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <span th:text="${errorMessage}"></span>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h3>All Comments:</h3>
+        <div class="card col-12" th:each="comment: ${topic.comments}">
+            <div class="card-body">
+                <h5 th:text="${comment.author}" class="card-title">Comment Author</h5>
+                <h6 th:text="${comment.prettyCreateTime}" class="card-subtitle mb-2 text-body-secondary">
+                    2025/01/01</h6>
+                <p th:text="${comment.text}" class="card-text">Comment Text</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
