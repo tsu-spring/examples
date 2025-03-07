@@ -19,7 +19,10 @@ spring:
   # H2 Configuration
   h2:
     console:
-      enabled: true
+      enabled: true # ENABLED by default, somehow... Don't forget to disable in production)
+#      enabled: false
+#      settings.trace: false
+#      settings.web-allow-others: false
   sql:
     init:
       # Enabled data.sql and schema.sql script-based initialization (Not required for H2)
