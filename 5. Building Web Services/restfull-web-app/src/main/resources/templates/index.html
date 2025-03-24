@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>Movies</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <div class="p-5 text-center bg-body-tertiary rounded-3">
+            <i class="fa-solid fa-film fs-1"></i>
+            <h1 class="text-body-emphasis">Fake RESTful IMDB</h1>
+            <p class="col-lg-8 mx-auto fs-5 text-muted">
+                We expose our entities (movies, genres, and people) using <b>spring-data-rest</b> and
+                <b>spring-restdocs</b> projects.
+            </p>
+            <div class="d-inline-flex gap-2 mb-5">
+                <a th:href="@{/swagger-ui/index.html}"
+                   class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill">
+                    Swagger UI Page
+                </a>
+                <a th:href="@{/v3/api-docs}" class="btn btn-outline-secondary btn-lg px-4 rounded-pill">
+                    OpenAPI Docs
+                </a>
+            </div>
+        </div>
+        <div class="alert alert-info alert-dismissible fade show mt-3" role="alert">
+            <strong>Hold on!</strong> The project also has fake "bad" endpoints to see custom error JSON responses:
+            <a th:href="@{/bad/throw-exception}">Throw Exception</a> and
+            <a th:href="@{/bad/validate-input}">JSON Validation</a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
