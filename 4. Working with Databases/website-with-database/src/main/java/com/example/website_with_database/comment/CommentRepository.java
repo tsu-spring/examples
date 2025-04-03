@@ -5,6 +5,8 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+// Spring Data JPA automatically generates implementations for repository interfaces that extend 
+// JpaRepository (or other similar interfaces like CrudRepository or PagingAndSortingRepository).
 @Repository
 public interface CommentRepository extends JpaRepository<Comment, Long> {
 
