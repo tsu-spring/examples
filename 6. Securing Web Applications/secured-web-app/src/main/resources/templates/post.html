@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title th:text="${post.title}">Post Title</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1 th:text="${post.title}">Post Title</h1>
+    <div class="d-flex">
+        <h4 class="flex-grow-1">
+            <span th:text="${post.prettyCreateTime}">2 days ago</span>
+            (at <span th:text="${post.createTime}">2015.05.01T12:00:00</span>)
+            by
+            <a th:href="@{/author/{username}/posts(username=${post.author})}">
+                <span th:text="${post.author}">Vakho</span>
+            </a>
+        </h4>
+        <div th:if="${#authorization.expression('isAuthenticated()') and post.author == #authentication.name}">
+            <a th:href="@{/profile/post/{id}/edit(id=${post.id},redirectTo='/post/'+${post.id})}"
+               class="btn btn-warning">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+            <a th:href="@{/profile/post/{id}/delete(id=${post.id})}"
+               class="btn btn-danger"
+               onclick="return confirm('Do you really want to delete this guy?');">
+                <i class="fa-solid fa-trash"></i>
+            </a>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-4">
+            <img th:src="'https://picsum.photos/seed/' + ${id} + '/1000/600'"
+                 class="img-fluid img-thumbnail" alt="Post cover image"/>
+        </div>
+        <div class="col-8">
+            <p th:text="${post.content}">Post Content.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav th:fragment="pagination (username, currentPage, totalPages)" class="mt-4 d-flex justify-content-center">
+    <div class="row justify-content-center align-items-center">
+        <div class="col">
+            <div class="d-flex justify-content-center align-items-center gap-1">
+                <!-- Previous Page Link -->
+                <div>
+                    <th:block th:switch="${#strings.isEmpty(username)}">
+                        <a th:case="true" class="btn btn-outline-primary"
+                           th:classappend="${currentPage == 0} ? 'disabled'"
+                           th:href="@{/posts(page=${currentPage - 1})}"
+                           th:aria-disabled="${currentPage == 0}">Previous</a>
+                        <a th:case="false" class="btn btn-outline-primary"
+                           th:classappend="${currentPage == 0} ? 'disabled'"
+                           th:href="@{/author/{username}/posts(username=${username}, page=${currentPage - 1})}"
+                           th:aria-disabled="${currentPage == 0}">Previous</a>
+                    </th:block>
+                </div>
+                <div class="flex-grow-1 d-flex justify-content-center flex-wrap gap-1">
+                    <!-- Page Numbers -->
+                    <a th:each="p : ${#numbers.sequence(0, totalPages - 1)}"
+                       th:classappend="${p == currentPage} ? 'active'"
+                       class="btn btn-outline-secondary" th:href="@{/posts(page=${p})}"
+                       th:text="${p + 1}">1</a>
+                </div>
+                <!-- Next Page Link -->
+                <div>
+                    <th:block th:switch="${#strings.isEmpty(username)}">
+                        <a th:case="true" class="btn btn-outline-primary"
+                           th:classappend="${currentPage == totalPages - 1} ? 'disabled'"
+                           th:href="@{/posts(page=${currentPage + 1})}"
+                           th:aria-disabled="${currentPage == totalPages - 1}">Next</a>
+                        <a th:case="false" class="btn btn-outline-primary"
+                           th:classappend="${currentPage == totalPages - 1} ? 'disabled'"
+                           th:href="@{/author/{username}/posts(username=${username}, page=${currentPage + 1})}"
+                           th:aria-disabled="${currentPage == totalPages - 1}">Next</a>
+                    </th:block>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+</body>
+</html>

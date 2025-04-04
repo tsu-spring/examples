@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>All Posts</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>All Posts</h1>
+    <hr/>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col" th:each="p : ${posts}">
+            <div th:replace="fragment/post :: post (id=${p.id}, title=${p.title}, excerpt=${p.excerpt}, createTime=${p.prettyCreateTime}, author=${p.author})"></div>
+        </div>
+    </div>
+    <nav th:replace="fragment/pagination :: pagination (username=null, currentPage=${currentPage}, totalPages=${totalPages})"></nav>
+</div>
+</body>
+</html>

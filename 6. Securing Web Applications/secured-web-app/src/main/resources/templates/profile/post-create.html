@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>New Post</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>Create Post</h1>
+    <hr>
+    <form th:action="@{/profile/post/new}" th:object="${postCreateForm}" method="post">
+        <div class="mb-3">
+            <label for="postTitle" class="form-label">Post Title</label>
+            <input class="form-control" type="text" th:errorclass="is-invalid" th:field="*{title}" id="postTitle"
+                   th:classappend="${#fields.hasErrors('title')} ? 'is-invalid' : ''"/>
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></div>
+        </div>
+        <div class="mb-3">
+            <label for="postContent" class="form-label">Post Content</label>
+            <textarea rows="10" class="form-control" id="postContent" th:errorclass="is-invalid" th:field="*{content}"
+                      th:classappend="${#fields.hasErrors('content')} ? 'is-invalid' : ''"></textarea>
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('content')}" th:errors="*{content}"></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
+</body>
+</html>

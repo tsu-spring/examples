@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>All Posts</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>My Posts (Total: <span th:text="${totalElements}">20</span>)</h1>
+    <hr/>
+    <table class="table table-sm table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">id</th>
+            <th scope="col">Cover</th>
+            <th scope="col">Create Time</th>
+            <th scope="col">Title</th>
+            <th scope="col">Excerpt</th>
+            <th scope="col">Operations</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="p, iterStat : ${posts}">
+            <th scope="row" th:text="${iterStat.count}">1</th>
+            <td th:text="${p.id}">Post Id</td>
+            <td th:style="'background-image: url(\'https://picsum.photos/seed/' + ${p.id} + '/32/32\'); background-size: cover; background-position: center;'"
+                     class="bg-secondary"></td>
+            <td th:text="${p.createTime}">Post Create Time</td>
+            <td><a th:href="@{/post/{id}(id=${p.id})}" th:text="${p.title}">Post Title</a></td>
+            <td th:text="${p.excerpt}">Post Excerpt...</td>
+            <td>
+                <div class="d-flex gap-1">
+                    <div class="col">
+                        <a th:href="@{/profile/post/{id}/edit(id=${p.id},redirectTo='/profile?page='+${currentPage})}"
+                           class="btn btn-warning">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a th:href="@{/profile/post/{id}/delete(id=${p.id},redirectTo='/profile?page='+${currentPage})}"
+                           class="btn btn-danger"
+                           onclick="return confirm('Do you really want to delete this guy?');">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- Previous Page Link -->
+    <div class="d-flex justify-content-center align-items-center gap-3">
+        <div><a class="btn btn-outline-primary"
+                th:classappend="${currentPage == 0} ? 'disabled'"
+                th:href="@{/profile(page=${currentPage - 1})}"
+                th:aria-disabled="${currentPage == 0}">Previous</a>
+        </div>
+        <div class="btn btn-outline-secondary disabled">
+            Current Page: <span th:text="${currentPage + 1}">1</span>/<span th:text="${totalPages}">
+        </div>
+        <!-- Next Page Link -->
+        <div><a class="btn btn-outline-primary"
+                th:classappend="${currentPage == totalPages - 1} ? 'disabled'"
+                th:href="@{/profile(page=${currentPage + 1})}"
+                th:aria-disabled="${currentPage == totalPages - 1}">Next</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

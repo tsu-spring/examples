@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>Please Log In</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-4">
+            <h1>Register</h1>
+            <form th:action="@{/register}" th:object="${registerForm}" method="post"
+                  class="d-flex flex-column gap-3">
+                <div>
+                    <label for="usernameField" class="form-label">Username</label>
+                    <input th:field="*{username}" type="text" class="form-control" id="usernameField"
+                           th:classappend="${#fields.hasErrors('username')} ? 'is-invalid' : ''"/>
+                    <div class="invalid-feedback"
+                         th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Username taken?
+                    </div>
+                </div>
+                <div>
+                    <label for="passwordField" class="form-label">Password</label>
+                    <input th:field="*{password}" type="password" class="form-control" id="passwordField"
+                           th:classappend="${#fields.hasErrors('password')} ? 'is-invalid' : ''"/>
+                    <div class="invalid-feedback"
+                         th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password error?
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
