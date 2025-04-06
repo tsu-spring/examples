@@ -51,7 +51,9 @@ public class SecurityConfig {
                 .rememberMe(configurer -> configurer
                         .key("superRandomSecretKeyThisIsYesYes...") // Unique key for token encryption
                         .tokenValiditySeconds(86400) // 1 day in seconds (default is 14 days)
-                );
+                )
+                // Let's also basic auth for REST endpoints... for simplicity :)
+                .httpBasic(Customizer.withDefaults());
 
         http.csrf(customizer -> customizer
                 // Only ignore CSRF for "/h2-console/**" endpoints
