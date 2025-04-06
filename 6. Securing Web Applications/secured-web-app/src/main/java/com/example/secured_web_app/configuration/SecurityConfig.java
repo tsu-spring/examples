@@ -48,7 +48,10 @@ public class SecurityConfig {
                 .logout(Customizer.withDefaults())
                 // Upon authenticating if the HTTP parameter named "remember-me" exists, then
                 // the user will be remembered even after their jakarta.servlet.http.HttpSession expires.
-                .rememberMe(Customizer.withDefaults());
+                .rememberMe(configurer -> configurer
+                        .key("superRandomSecretKeyThisIsYesYes...") // Unique key for token encryption
+                        .tokenValiditySeconds(86400) // 1 day in seconds (default is 14 days)
+                );
 
         http.csrf(customizer -> customizer
                 // Only ignore CSRF for "/h2-console/**" endpoints
