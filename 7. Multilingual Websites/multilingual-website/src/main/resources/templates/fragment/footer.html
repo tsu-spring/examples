@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<body>
+<footer th:fragment="footer" class="py-3 border-top">
+    <div class="container d-flex flex-wrap justify-content-center align-items-center ">
+        <p class="mb-0 text-body-secondary">
+            <span th:text="#{footer.rights}">All Rights Reserved</span>
+            <span>&copy;</span>
+            <span th:text="${#dates.year(#dates.createNow())}"></span>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

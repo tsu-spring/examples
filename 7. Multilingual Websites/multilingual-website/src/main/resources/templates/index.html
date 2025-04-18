@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title th:text="#{nav.home}">Home Page</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="text-center bg-secondary-subtle rounded-4 p-4">
+        <h1 th:text="#{greeting}">Welcome to our website!</h1>
+        <p th:text="#{description}">Our website uses Spring Boot's multilingual capabilities.</p>
+    </div>
+</div>
+</body>
+</html>
