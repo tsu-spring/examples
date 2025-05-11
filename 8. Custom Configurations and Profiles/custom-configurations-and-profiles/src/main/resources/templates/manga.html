@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6"
+      layout:decorate="~{layout.html}">
+<head>
+    <title th:text="${manga.title}">Title</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="row">
+        <div class="col-12 col-lg-4">
+            <img class="img-fluid img-thumbnail w-100" th:src="${manga.imageUrl}" alt="Manga book cover"/>
+        </div>
+        <div class="col-12 col-lg-8">
+            <h1 class="mb-0" th:text="${manga.title}">Title</h1>
+            <h4 class="mb-3" th:text="${manga.author}">Vakho Potatohead</h4>
+            <div class="d-flex flex-column gap-1 mb-3">
+                <div th:if="${manga.publicationYear}" class="d-flex gap-1">
+                    <span><b>Publication Year</b>:</span>
+                    <span class="flex-grow-1" th:text="${manga.publicationYear}">1993</span>
+                </div>
+                <div th:if="${manga.volumes}" class="d-flex gap-1">
+                    <span><b>Volumes</b>:</span>
+                    <span class="flex-grow-1" th:text="${manga.volumes}">4</span>
+                </div>
+                <div th:if="${manga.chapters}" class="d-flex gap-1">
+                    <span><b>Chapters</b>:</span>
+                    <span class="flex-grow-1" th:text="${manga.chapters}">12</span>
+                </div>
+            </div>
+            <p th:text="${manga.description}">Description</p>
+            <hr>
+            <h2 class="mb-3">Reviews</h2>
+            <div class="row row-cols-1 g-3">
+                <div class="col" sec:authorize="isAuthenticated()">
+                    <div class="card">
+                        <div class="card-body">
+                            <form th:action="@{/review/new}" th:object="${reviewForm}" method="post"
+                                  class="d-flex flex-column gap-3">
+                                <input type="hidden" th:field="*{mangaId}"/>
+                                <div>
+                                    <label for="starsField" class="form-label">Stars</label>
+                                    <input th:field="*{stars}" type="range" min="1" max="5" step="1" class="form-range"
+                                           id="starsField"
+                                           th:classappend="${#fields.hasErrors('stars')} ? 'is-invalid' : ''"/>
+                                    <div class="invalid-feedback" th:if="${#fields.hasErrors('stars')}"
+                                         th:errors="*{stars}">
+                                        Stars error?
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="textField" class="form-label">Text</label>
+                                    <textarea th:field="*{text}" class="form-control" id="textField" rows="3"
+                                              th:classappend="${#fields.hasErrors('text')} ? 'is-invalid' : ''"
+                                    ></textarea>
+                                    <div class="invalid-feedback" th:if="${#fields.hasErrors('text')}"
+                                         th:errors="*{text}">
+                                        Text error?
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    Write review as <span sec:authentication="name">Bob</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" th:each="review : ${manga.reviews}">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-body-secondary d-flex justify-content-between align-items-center">
+                                <div>By <span th:text="${review.user.username}">Bob Smith</span></div>
+                                <div th:text="${review.prettyCreatedAt}">
+                                    1 min ago
+                                </div>
+                            </h6>
+                            <p class="card-text" th:text="${review.text}">Some review text...</p>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">
+                                <i class="fa-solid fa-star"></i> <span th:text="${review.stars}">4</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

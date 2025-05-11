@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>All Posts</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>All Mangas</h1>
+    <hr/>
+    <nav th:replace="fragment/pagination :: pagination (currentPage=${currentPage}, totalPages=${totalPages})"></nav>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3">
+        <div class="col" th:each="m : ${mangas}">
+            <div class="card border-0">
+                <div class="ps-4 pe-3 pt-3 pb-0">
+                    <div th:replace="fragment/manga :: manga (id=${m.id}, imageUrl=${m.imageUrl}, title=${m.title}, excerpt=${m.excerpt}, author=${m.author}, publicationYear=${m.publicationYear}, volumes=${m.volumes}, chapters=${m.chapters})"></div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${m.title}">Title</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary" th:text="${m.author}">Author</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav th:replace="fragment/pagination :: pagination (currentPage=${currentPage}, totalPages=${totalPages})"></nav>
+</div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+jikan-moe:
+    top-manga-endpoint: https://api.jikan.moe/v4/top/manga?page={page}

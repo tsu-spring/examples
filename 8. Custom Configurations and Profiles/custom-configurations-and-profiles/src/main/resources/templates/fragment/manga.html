@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="manga (id, imageUrl, title, excerpt, author, publicationYear, volumes, chapters)"
+        class="book shadow-lg">
+    <!-- Front -->
+    <ul class="list-unstyled hardcover_front">
+        <li th:style="'background-image: url(' + ${imageUrl} + ');'"></li>
+        <li></li>
+    </ul>
+    <!-- Pages -->
+    <ul class="page list-unstyled">
+        <li></li>
+        <li class="h-100 d-flex flex-column justify-content-center p-3" style="font-size: .75em;">
+            <div class="px-1 overflow-auto">
+                <p class="mb-0" th:text="${excerpt}">Excerpt...</p>
+            </div>
+            <div class="d-flex justify-content-center mt-1">
+                <a th:href="@{/manga/{id}(id=${id})}">Read More &raquo;</a>
+            </div>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!-- Back -->
+    <ul class="hardcover_back list-unstyled">
+        <li></li>
+        <li></li>
+    </ul>
+    <ul class="book_spine list-unstyled">
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

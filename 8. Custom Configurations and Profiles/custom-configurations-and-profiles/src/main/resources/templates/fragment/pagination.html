@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav th:fragment="pagination (currentPage, totalPages)" class="my-4 d-flex justify-content-center">
+    <div class="row justify-content-center align-items-center">
+        <div class="col">
+            <div class="d-flex justify-content-center align-items-center gap-1">
+                <!-- First Page Link -->
+                <div>
+                    <a class="btn btn-outline-danger"
+                       th:classappend="${currentPage == 0} ? 'disabled'"
+                       th:href="@{/mangas(page=${0})}"
+                       th:aria-disabled="${currentPage == 0}">First</a>
+                </div>
+                <!-- Previous Page Link -->
+                <div>
+                    <a class="btn btn-outline-primary"
+                       th:classappend="${currentPage == 0} ? 'disabled'"
+                       th:href="@{/mangas(page=${currentPage - 1})}"
+                       th:aria-disabled="${currentPage == 0}">Previous</a>
+                </div>
+                <div class="flex-grow-1 d-flex justify-content-center flex-wrap gap-1">
+                    <!-- Current Page Number -->
+                    <a class="btn btn-outline-secondary disabled" th:href="@{/mangas(page=${p})}"
+                       th:text="${currentPage}">1</a>
+                </div>
+                <!-- Next Page Link -->
+                <div>
+                    <a class="btn btn-outline-primary"
+                       th:classappend="${currentPage == totalPages - 1} ? 'disabled'"
+                       th:href="@{/mangas(page=${currentPage + 1})}"
+                       th:aria-disabled="${currentPage == totalPages - 1}">Next</a>
+                </div>
+                <!-- Last Page Link -->
+                <div>
+                    <a class="btn btn-outline-danger"
+                       th:classappend="${currentPage == totalPages - 1} ? 'disabled'"
+                       th:href="@{/mangas(page=${totalPages - 1})}"
+                       th:aria-disabled="${currentPage == totalPages - 1}">Last</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</nav>
+</body>
+</html>
