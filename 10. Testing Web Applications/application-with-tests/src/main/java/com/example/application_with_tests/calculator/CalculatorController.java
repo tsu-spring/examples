@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import static com.example.application_with_tests.calculator.Operation.*;
+
 @RequiredArgsConstructor
 @Controller
 public class CalculatorController {
@@ -29,10 +31,10 @@ public class CalculatorController {
             return "index";
         }
         redirectAttributes.addFlashAttribute("calculationResult", switch (calculatorForm.getOperation()) {
-            case ADD -> calculatorForm.getA() + calculatorForm.getB();
-            case SUBTRACT -> calculatorForm.getA() - calculatorForm.getB();
-            case MULTIPLY -> calculatorForm.getA() * calculatorForm.getB();
-            case DIVIDE -> calculatorForm.getA() / calculatorForm.getB();
+            case ADD -> calculatorService.add(calculatorForm.getA(), calculatorForm.getB());
+            case SUBTRACT -> calculatorService.sub(calculatorForm.getA(), calculatorForm.getB());
+            case MULTIPLY -> calculatorService.mul(calculatorForm.getA(), calculatorForm.getB());
+            case DIVIDE -> calculatorService.div(calculatorForm.getA(), calculatorForm.getB());
         });
         return "redirect:/";
     }
