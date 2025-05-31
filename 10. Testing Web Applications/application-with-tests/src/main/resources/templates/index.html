@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<body>
+<div layout:fragment="content">
+    <div class="card text-center">
+        <div class="card-body">
+            <h3 class="card-title mb-3">Calculator</h3>
+            <form class="d-flex flex-column gap-3" th:action="@{/}" th:object="${calculatorForm}" method="post">
+                <div class="input-group">
+                    <span class="input-group-text">A</span>
+                    <input class="form-control" type="number" th:errorclass="is-invalid" th:field="*{a}"
+                           th:classappend="${#fields.hasErrors('a')} ? 'is-invalid' : ''"/>
+                    <div class="invalid-feedback" th:if="${#fields.hasErrors('a')}" th:errors="*{a}"></div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Operation</span>
+                    <select class="form-select" th:field="*{operation}">
+                        <option th:each="op : ${T(com.example.application_with_tests.calculator.Operation).values()}"
+                                th:value="${op}"
+                                th:text="${op.displaySymbol}"></option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">B</span>
+                    <input class="form-control" type="number" th:errorclass="is-invalid" th:field="*{b}"
+                           th:classappend="${#fields.hasErrors('b')} ? 'is-invalid' : ''"/>
+                    <div class="invalid-feedback" th:if="${#fields.hasErrors('b')}" th:errors="*{b}"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Calculate</button>
+                <div class="input-group">
+                    <span class="input-group-text">Result</span>
+                    <input readonly class="form-control" th:value="${calculationResult}" type="number"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
