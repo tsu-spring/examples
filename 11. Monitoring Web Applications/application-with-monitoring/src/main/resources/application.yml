@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: application-with-monitoring
+
+# Custom information for info endpoint
+info:
+  app:
+    name: My Spring Boot App
+    description: Demo project for Spring Boot Actuator
+    version: 1.0.0
+  company: Example Corp
+  author: "John Doe"
+  potato: "stuff"

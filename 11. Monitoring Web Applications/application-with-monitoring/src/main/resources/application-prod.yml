@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: application-with-monitoring
+
+logging:
+  level:
+    root: warn
+    com.example.application_with_monitoring: info
+
+management:
+  # All Endpoints
+  endpoints:
+    web:
+      exposure:
+        include: health, info, env
+  # Configuring Endpoints
+  endpoint:
+    health:
+      show-components: when_authorized
+      show-details: when_authorized
+    env:
+      show-values: when_authorized
+  info:
+    env:
+      enabled: true
+    defaults:
+      enabled: off
+    git:
+      enabled: off
