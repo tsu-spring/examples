@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: jms-activemq-demo
+
+  activemq:
+    embedded:
+      enabled: true # true by default (enabled if broker available in dependencies)
+# One of the bellow configs is required only if the default Java serialization is used!
+#    packages:
+#      trusted:
+#        - com.example.jms_activemq_demo.model
+#      trust-all: true
+logging:
+  level:
+    root: info
+    com.example.jms_activemq_demo: debug
+
