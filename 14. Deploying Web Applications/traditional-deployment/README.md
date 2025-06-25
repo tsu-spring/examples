@@ -4,14 +4,17 @@
 
 ### 1. Project Packaging Type
 
-POM-ში პროექტის პაკეტირების ტიპი უნდა მივუთითოთ `war`.
+POM-ში პროექტის პაკეტირების ტიპი უნდა მივუთითოთ `war`:
+
+```xml
+<packaging>war</packaging>
+```
 
 ### 2. Tomcat as Provided Dependency
 
 Tomcat-ის სტარტერ პროექტი (რომელიც გვთავაზობდა Embedded ვარიანტს) უნდა გახდეს `provided` ტიპის:
 
 ```xml
-
 <dependencies>
     <!-- … -->
     <dependency>
@@ -29,7 +32,6 @@ Tomcat-ის სტარტერ პროექტი (რომელიც
 configure() მეთოდს:
 
 ```java
-
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
 
