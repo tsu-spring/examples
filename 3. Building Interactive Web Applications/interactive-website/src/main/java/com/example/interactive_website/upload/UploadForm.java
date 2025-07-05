@@ -15,4 +15,6 @@ public class UploadForm {
     @NotNull(message = "Date of the image must be specified")
     @PastOrPresent(message = "Date cannot be in the future.")
     private LocalDate date;
+
+    private String info;
 }

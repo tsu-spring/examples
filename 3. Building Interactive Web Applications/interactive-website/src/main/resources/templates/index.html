@@ -16,7 +16,11 @@
                         <figure class="figure">
                             <img th:src="@{${image.relativePath}}" class="figure-img img-fluid rounded img-thumbnail"
                                  alt="album image">
-                            <figcaption th:text="${image.date}" class="figure-caption text-end">A caption for image.
+                            <figcaption class="figure-caption text-end">
+                                <span th:text="${image.date}">1984-01-01</span>
+                                <span th:if="${image.info != null}" th:text="${image.info}">
+                                    Some information about image
+                                </span>
                             </figcaption>
                         </figure>
                     </div>

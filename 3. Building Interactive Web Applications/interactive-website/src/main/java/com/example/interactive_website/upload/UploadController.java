@@ -38,7 +38,7 @@ public class UploadController {
         }
 
         try {
-            service.saveImage(form.getImage(), form.getDate());
+            service.saveImage(form.getImage(), form.getDate(), form.getInfo());
             redirectAttributes.addFlashAttribute("successMessage", "File uploaded successfully!");
         } catch (Exception e) {
             redirectAttributes.addFlashAttribute("errorMessage", String.format("An error occurred: %s",

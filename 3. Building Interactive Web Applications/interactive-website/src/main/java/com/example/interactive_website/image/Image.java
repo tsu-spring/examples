@@ -11,4 +11,5 @@ import java.time.LocalDate;
 public class Image {
     private Path relativePath;
     private LocalDate date;
+    private String info;
 }

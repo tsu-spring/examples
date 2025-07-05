@@ -15,7 +15,7 @@ public class UploadService {
     private final ImageService imageService;
 
     @SneakyThrows
-    public void saveImage(MultipartFile file, LocalDate date) {
-        imageService.save(file, date);
+    public void saveImage(MultipartFile file, LocalDate date, String info) {
+        imageService.save(file, date, info);
     }
 }

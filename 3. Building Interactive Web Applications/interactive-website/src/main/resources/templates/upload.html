@@ -7,7 +7,7 @@
 </head>
 <body>
 <div layout:fragment="content">
-    <h1>Upload a new image to album</h1>
+    <h1>Upload a new image to the album</h1>
     <hr>
     <form class="mb-3" th:action="@{/upload}" th:object="${uploadForm}" method="post" enctype="multipart/form-data">
         <div class="mb-3">
@@ -19,6 +19,12 @@
             <label for="formDate" class="form-label">Email address</label>
             <input type="date" class="form-control" th:errorclass="is-invalid" th:field="*{date}" id="formDate">
             <div class="invalid-feedback" th:if="${#fields.hasErrors('date')}" th:errors="*{date}"></div>
+        </div>
+        <div class="mb-3">
+            <label for="formInfo" class="form-label">Info</label>
+            <textarea rows="5" class="form-control" placeholder="You may add information to your image here..."
+                      th:errorclass="is-invalid" th:field="*{info}" id="formInfo"></textarea>
+            <div class="invalid-feedback" th:if="${#fields.hasErrors('info')}" th:errors="*{info}"></div>
         </div>
         <button type="submit" class="btn btn-primary">Upload</button>
     </form>
