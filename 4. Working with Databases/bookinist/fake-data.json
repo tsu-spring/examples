@@ -1,0 +1,626 @@
+{
+  "genres": [
+    { "name": "Fiction" },
+    { "name": "Classic" },
+    { "name": "Dystopian" },
+    { "name": "Science Fiction" },
+    { "name": "Political Fiction" },
+    { "name": "Historical" },
+    { "name": "Romance" },
+    { "name": "Adventure" },
+    { "name": "Fantasy" },
+    { "name": "Philosophical" },
+    { "name": "Thriller" },
+    { "name": "Mystery" },
+    { "name": "Young Adult" },
+    { "name": "Post-Apocalyptic" },
+    { "name": "Horror" },
+    { "name": "Nonfiction" },
+    { "name": "History" },
+    { "name": "Memoir" },
+    { "name": "Crime" },
+    { "name": "Humor" },
+    { "name": "Biography" },
+    { "name": "Gothic" },
+    { "name": "Satire" },
+    { "name": "Tragedy" }
+  ],
+  "books": [
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genres": ["Fiction", "Classic"],
+      "publishedYear": 1925,
+      "isbn": "9780743273565",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780743273565-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "genres": ["Dystopian", "Science Fiction", "Political Fiction"],
+      "publishedYear": 1949,
+      "isbn": "9780451524935",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg",
+      "rating": 4.7
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "genres": ["Fiction", "Classic", "Historical"],
+      "publishedYear": 1960,
+      "isbn": "9780061120084",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780061120084-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg",
+      "rating": 4.5
+    },
+    {
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "genres": ["Romance", "Classic"],
+      "publishedYear": 1813,
+      "isbn": "9780141439518",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439518-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg",
+      "rating": 4.3
+    },
+    {
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "genres": ["Historical", "Classic"],
+      "publishedYear": 1869,
+      "isbn": "9780199232765",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780199232765-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780199232765-L.jpg",
+      "rating": 4.1
+    },
+    {
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genres": ["Fantasy", "Adventure"],
+      "publishedYear": 1937,
+      "isbn": "9780547928227",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780547928227-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg",
+      "rating": 4.6
+    },
+    {
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "genres": ["Science Fiction", "Dystopian"],
+      "publishedYear": 1932,
+      "isbn": "9780060850524",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780060850524-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780060850524-L.jpg",
+      "rating": 4.2
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "genres": ["Fiction", "Classic"],
+      "publishedYear": 1951,
+      "isbn": "9780316769488",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780316769488-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780316769488-L.jpg",
+      "rating": 3.8
+    },
+    {
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genres": ["Adventure", "Philosophical"],
+      "publishedYear": 1988,
+      "isbn": "9780061122415",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780061122415-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg",
+      "rating": 3.9
+    },
+    {
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "genres": ["Thriller", "Mystery"],
+      "publishedYear": 2003,
+      "isbn": "9780307474278",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307474278-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307474278-L.jpg",
+      "rating": 3.8
+    },
+    {
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "genres": ["Fantasy", "Adventure", "Young Adult"],
+      "publishedYear": 1997,
+      "isbn": "9780590353427",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780590353427-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780590353427-L.jpg",
+      "rating": 4.8
+    },
+    {
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "genres": ["Dystopian", "Science Fiction", "Young Adult"],
+      "publishedYear": 2008,
+      "isbn": "9780439023481",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780439023481-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780439023481-L.jpg",
+      "rating": 4.3
+    },
+    {
+      "title": "The Book Thief",
+      "author": "Markus Zusak",
+      "genres": ["Historical", "Fiction"],
+      "publishedYear": 2005,
+      "isbn": "9780375842207",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780375842207-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg",
+      "rating": 4.4
+    },
+    {
+      "title": "The Road",
+      "author": "Cormac McCarthy",
+      "genres": ["Post-Apocalyptic", "Fiction"],
+      "publishedYear": 2006,
+      "isbn": "9780307387899",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307387899-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307387899-L.jpg"
+    },
+    {
+      "title": "Gone Girl",
+      "author": "Gillian Flynn",
+      "genres": ["Thriller", "Mystery"],
+      "publishedYear": 2012,
+      "isbn": "9780307588371",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307588371-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307588371-L.jpg",
+      "rating": 4.1
+    },
+    {
+      "title": "The Fault in Our Stars",
+      "author": "John Green",
+      "genres": ["Romance", "Young Adult"],
+      "publishedYear": 2012,
+      "isbn": "9780525478812",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780525478812-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780525478812-L.jpg",
+      "rating": 4.2
+    },
+    {
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "genres": ["Science Fiction", "Adventure"],
+      "publishedYear": 1965,
+      "isbn": "9780441172719",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780441172719-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780441172719-L.jpg",
+      "rating": 4.5
+    },
+    {
+      "title": "The Shining",
+      "author": "Stephen King",
+      "genres": ["Horror", "Thriller"],
+      "publishedYear": 1977,
+      "isbn": "9780307743657",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307743657-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307743657-L.jpg",
+      "rating": 4.3
+    },
+    {
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "genres": ["Nonfiction", "History"],
+      "publishedYear": 2011,
+      "isbn": "9780062316097",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780062316097-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780062316097-L.jpg",
+      "rating": 4.4
+    },
+    {
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "genres": ["Fantasy", "Adventure", "Classic"],
+      "publishedYear": 1954,
+      "isbn": "9780618640157",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780618640157-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780618640157-L.jpg",
+      "rating": 4.9
+    },
+    {
+      "title": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "genres": ["Fiction", "Historical"],
+      "publishedYear": 2003,
+      "isbn": "9781594631931",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781594631931-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781594631931-L.jpg",
+      "rating": 4.3
+    },
+    {
+      "title": "Life of Pi",
+      "author": "Yann Martel",
+      "genres": ["Fiction", "Adventure", "Philosophical"],
+      "publishedYear": 2001,
+      "isbn": "9780156027328",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780156027328-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780156027328-L.jpg"
+    },
+    {
+      "title": "The Girl with the Dragon Tattoo",
+      "author": "Stieg Larsson",
+      "genres": ["Thriller", "Mystery", "Crime"],
+      "publishedYear": 2005,
+      "isbn": "9780307454546",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307454546-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307454546-L.jpg",
+      "rating": 4.1
+    },
+    {
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "genres": ["Science Fiction", "Humor"],
+      "publishedYear": 1979,
+      "isbn": "9780345391803",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780345391803-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780345391803-L.jpg",
+      "rating": 4.4
+    },
+    {
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "genres": ["Science Fiction", "Dystopian", "Classic"],
+      "publishedYear": 1953,
+      "isbn": "9781451673319",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781451673319-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781451673319-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "The Diary of a Young Girl",
+      "author": "Anne Frank",
+      "genres": ["Nonfiction", "Historical", "Memoir"],
+      "publishedYear": 1947,
+      "isbn": "9780553296983",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780553296983-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780553296983-L.jpg",
+      "rating": 4.6
+    },
+    {
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "genres": ["Fiction", "Political Fiction", "Classic"],
+      "publishedYear": 1945,
+      "isbn": "9780451526342",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780451526342-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780451526342-L.jpg",
+      "rating": 4.4
+    },
+    {
+      "title": "The Girl on the Train",
+      "author": "Paula Hawkins",
+      "genres": ["Thriller", "Mystery"],
+      "publishedYear": 2015,
+      "isbn": "9781594634024",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781594634024-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781594634024-L.jpg",
+      "rating": 3.9
+    },
+    {
+      "title": "Educated",
+      "author": "Tara Westover",
+      "genres": ["Nonfiction", "Memoir"],
+      "publishedYear": 2018,
+      "isbn": "9780399590504",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780399590504-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780399590504-L.jpg",
+      "rating": 4.5
+    },
+    {
+      "title": "Becoming",
+      "author": "Michelle Obama",
+      "genres": ["Nonfiction", "Memoir", "Biography"],
+      "publishedYear": 2018,
+      "isbn": "9781524763138",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781524763138-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781524763138-L.jpg"
+    },
+    {
+      "title": "The Martian",
+      "author": "Andy Weir",
+      "genres": ["Science Fiction", "Adventure"],
+      "publishedYear": 2011,
+      "isbn": "9780553418026",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780553418026-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780553418026-L.jpg",
+      "rating": 4.6
+    },
+    {
+      "title": "A Game of Thrones",
+      "author": "George R.R. Martin",
+      "genres": ["Fantasy", "Adventure"],
+      "publishedYear": 1996,
+      "isbn": "9780553103540",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780553103540-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780553103540-L.jpg",
+      "rating": 4.5
+    },
+    {
+      "title": "The Night Circus",
+      "author": "Erin Morgenstern",
+      "genres": ["Fantasy", "Romance"],
+      "publishedYear": 2011,
+      "isbn": "9780385534635",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780385534635-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780385534635-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "Slaughterhouse-Five",
+      "author": "Kurt Vonnegut",
+      "genres": ["Science Fiction", "Classic"],
+      "publishedYear": 1969,
+      "isbn": "9780385333481",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780385333481-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780385333481-L.jpg",
+      "rating": 4.1
+    },
+    {
+      "title": "The Handmaid's Tale",
+      "author": "Margaret Atwood",
+      "genres": ["Dystopian", "Fiction"],
+      "publishedYear": 1985,
+      "isbn": "9780385490818",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780385490818-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780385490818-L.jpg",
+      "rating": 4.2
+    },
+    {
+      "title": "Crime and Punishment",
+      "author": "Fyodor Dostoevsky",
+      "genres": ["Fiction", "Classic", "Crime"],
+      "publishedYear": 1866,
+      "isbn": "9780486415871",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780486415871-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780486415871-L.jpg"
+    },
+    {
+      "title": "Catch-22",
+      "author": "Joseph Heller",
+      "genres": ["Fiction", "Classic", "Humor"],
+      "publishedYear": 1961,
+      "isbn": "9781451626650",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781451626650-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781451626650-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "Where the Crawdads Sing",
+      "author": "Delia Owens",
+      "genres": ["Fiction", "Mystery"],
+      "publishedYear": 2018,
+      "isbn": "9780735219090",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780735219090-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780735219090-L.jpg",
+      "rating": 4.5
+    },
+    {
+      "title": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "genres": ["Thriller", "Mystery"],
+      "publishedYear": 2019,
+      "isbn": "9781250301697",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781250301697-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781250301697-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "Jane Eyre",
+      "author": "Charlotte Bronte",
+      "genres": ["Fiction", "Classic", "Romance", "Gothic"],
+      "publishedYear": 1847,
+      "isbn": "9780141441146",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141441146-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141441146-L.jpg",
+      "rating": 4.3
+    },
+    {
+      "title": "Wuthering Heights",
+      "author": "Emily Bronte",
+      "genres": ["Fiction", "Classic", "Romance", "Gothic"],
+      "publishedYear": 1847,
+      "isbn": "9780141439556",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439556-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439556-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "Great Expectations",
+      "author": "Charles Dickens",
+      "genres": ["Fiction", "Classic"],
+      "publishedYear": 1861,
+      "isbn": "9780141439563",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439563-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439563-L.jpg",
+      "rating": 3.9
+    },
+    {
+      "title": "A Tale of Two Cities",
+      "author": "Charles Dickens",
+      "genres": ["Fiction", "Classic", "Historical"],
+      "publishedYear": 1859,
+      "isbn": "9780141439600",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439600-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439600-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "The Brothers Karamazov",
+      "author": "Fyodor Dostoevsky",
+      "genres": ["Fiction", "Classic", "Philosophical"],
+      "publishedYear": 1880,
+      "isbn": "9780374528379",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780374528379-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780374528379-L.jpg",
+      "rating": 4.6
+    },
+    {
+      "title": "Anna Karenina",
+      "author": "Leo Tolstoy",
+      "genres": ["Fiction", "Classic", "Romance"],
+      "publishedYear": 1877,
+      "isbn": "9780143035008",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780143035008-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780143035008-L.jpg",
+      "rating": 4.2
+    },
+    {
+      "title": "Don Quixote",
+      "author": "Miguel de Cervantes",
+      "genres": ["Fiction", "Classic", "Adventure", "Humor"],
+      "publishedYear": 1605,
+      "isbn": "9780060934347",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780060934347-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780060934347-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "The Odyssey",
+      "author": "Homer",
+      "genres": ["Fiction", "Classic", "Adventure"],
+      "publishedYear": -800,
+      "isbn": "9780140268867",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780140268867-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780140268867-L.jpg",
+      "rating": 4.1
+    },
+    {
+      "title": "Frankenstein",
+      "author": "Mary Shelley",
+      "genres": ["Fiction", "Classic", "Horror", "Gothic"],
+      "publishedYear": 1818,
+      "isbn": "9780141439471",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439471-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439471-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "Dracula",
+      "author": "Bram Stoker",
+      "genres": ["Fiction", "Classic", "Horror", "Gothic"],
+      "publishedYear": 1897,
+      "isbn": "9780141439846",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439846-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439846-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "The Picture of Dorian Gray",
+      "author": "Oscar Wilde",
+      "genres": ["Fiction", "Classic", "Gothic", "Philosophical"],
+      "publishedYear": 1890,
+      "isbn": "9780141439570",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439570-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439570-L.jpg",
+      "rating": 4.2
+    },
+    {
+      "title": "Les Miserables",
+      "author": "Victor Hugo",
+      "genres": ["Fiction", "Classic", "Historical"],
+      "publishedYear": 1862,
+      "isbn": "9780451419439",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780451419439-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780451419439-L.jpg",
+      "rating": 4.4
+    },
+    {
+      "title": "The Count of Monte Cristo",
+      "author": "Alexandre Dumas",
+      "genres": ["Fiction", "Classic", "Adventure"],
+      "publishedYear": 1844,
+      "isbn": "9780140449266",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780140449266-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780140449266-L.jpg",
+      "rating": 4.6
+    },
+    {
+      "title": "Madame Bovary",
+      "author": "Gustave Flaubert",
+      "genres": ["Fiction", "Classic", "Romance"],
+      "publishedYear": 1857,
+      "isbn": "9780140449129",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780140449129-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780140449129-L.jpg",
+      "rating": 3.8
+    },
+    {
+      "title": "The Iliad",
+      "author": "Homer",
+      "genres": ["Fiction", "Classic", "Adventure", "Tragedy"],
+      "publishedYear": -750,
+      "isbn": "9780140275360",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780140275360-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780140275360-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "Gulliver's Travels",
+      "author": "Jonathan Swift",
+      "genres": ["Fiction", "Classic", "Adventure", "Satire"],
+      "publishedYear": 1726,
+      "isbn": "9780141439495",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439495-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439495-L.jpg",
+      "rating": 3.7
+    },
+    {
+      "title": "The Scarlet Letter",
+      "author": "Nathaniel Hawthorne",
+      "genres": ["Fiction", "Classic", "Historical"],
+      "publishedYear": 1850,
+      "isbn": "9780142437261",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780142437261-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780142437261-L.jpg",
+      "rating": 3.5
+    },
+    {
+      "title": "Sense and Sensibility",
+      "author": "Jane Austen",
+      "genres": ["Fiction", "Classic", "Romance"],
+      "publishedYear": 1811,
+      "isbn": "9780141439662",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439662-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439662-L.jpg",
+      "rating": 4.1
+    },
+    {
+      "title": "One Hundred Years of Solitude",
+      "author": "Gabriel Garcia Marquez",
+      "genres": ["Fiction", "Classic"],
+      "publishedYear": 1967,
+      "isbn": "9780060883287",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780060883287-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780060883287-L.jpg",
+      "rating": 4.3
+    },
+    {
+      "title": "The Adventures of Huckleberry Finn",
+      "author": "Mark Twain",
+      "genres": ["Fiction", "Classic", "Adventure", "Humor"],
+      "publishedYear": 1884,
+      "isbn": "9780142437179",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780142437179-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780142437179-L.jpg",
+      "rating": 3.8
+    },
+    {
+      "title": "Heart of Darkness",
+      "author": "Joseph Conrad",
+      "genres": ["Fiction", "Classic", "Adventure"],
+      "publishedYear": 1899,
+      "isbn": "9780141441672",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141441672-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141441672-L.jpg",
+      "rating": 3.6
+    }
+  ]
+}
