@@ -13,9 +13,9 @@ import org.springframework.web.servlet.resource.NoResourceFoundException;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(BookNotFoundException.class)
+    @ExceptionHandler({BookNotFoundException.class, AuthorNotFoundException.class})
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    public String handleBookNotFound(BookNotFoundException ex, Model model) {
+    public String handleNotFoundEntity(RuntimeException ex, Model model) {
         model.addAttribute("message", ex.getMessage());
         return "error/404";
     }

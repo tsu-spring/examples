@@ -31,6 +31,10 @@ public class BookService {
         return bookRepository.findAll();
     }
 
+    public List<Book> getBooksByAuthorId(Long authorId) {
+        return bookRepository.findByAuthorId(authorId);
+    }
+
     public Book saveBook(Book book) {
         return bookRepository.save(book);
     }

@@ -1,5 +1,6 @@
 package ge.edu.sangu.bookinist.book;
 
+import ge.edu.sangu.bookinist.author.Author;
 import ge.edu.sangu.bookinist.genre.Genre;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -25,8 +26,9 @@ public class Book {
     @Column(name="TITLE", nullable = false, unique = true)
     private String title;
 
-    @Column(name = "AUTHOR", nullable = false)
-    private String author;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "AUTHOR_ID", nullable = false)
+    private Author author;
 
     @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinTable(

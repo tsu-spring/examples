@@ -12,7 +12,10 @@
         </div>
         <div class="col-md-8 col-lg-9">
             <h1 class="mb-2">${book.title}</h1>
-            <h5 class="text-muted mb-3"><i class="fa-solid fa-pen-nib me-2"></i>${book.author}</h5>
+            <h5 class="text-muted mb-3">
+                <i class="fa-solid fa-pen-nib me-2"></i>
+                <a href="<@spring.url '/author/${book.author.id}'/>" class="text-muted">${book.author.name}</a>
+            </h5>
 
             <#if book.rating??>
                 <div class="mb-3">

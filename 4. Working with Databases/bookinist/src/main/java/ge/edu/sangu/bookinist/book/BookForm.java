@@ -16,8 +16,8 @@ public class BookForm {
     @NotBlank(message = "Title is required")
     private String title;
 
-    @NotBlank(message = "Author is required")
-    private String author;
+    @NotNull(message = "Author is required")
+    private Long authorId;
 
     @NotNull(message = "Published year is required")
     private Integer publishedYear;

@@ -23,12 +23,16 @@
                 </div>
 
 
-                <@spring.bind "bookForm.author"/>
+                <@spring.bind "bookForm.authorId"/>
                 <div class="mb-3">
-                    <label for="author" class="form-label">Author <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control <#if spring.status.errorMessages?has_content>is-invalid</#if>"
-                           id="author" name="${spring.status.expression}" value="${spring.status.value!''}"
-                           placeholder="Enter author name">
+                    <label for="authorId" class="form-label">Author <span class="text-danger">*</span></label>
+                    <select class="form-select <#if spring.status.errorMessages?has_content>is-invalid</#if>"
+                            id="authorId" name="${spring.status.expression}">
+                        <option value="">Select an author</option>
+                        <#list authors as author>
+                            <option value="${author.id}" <#if (spring.status.value!'') == author.id?string>selected</#if>>${author.name}</option>
+                        </#list>
+                    </select>
                     <#list spring.status.errorMessages as error>
                         <div class="invalid-feedback">
                             <i class="fa-solid fa-circle-exclamation me-1"></i>${error}

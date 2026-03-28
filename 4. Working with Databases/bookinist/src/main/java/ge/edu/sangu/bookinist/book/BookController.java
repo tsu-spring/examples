@@ -1,5 +1,6 @@
 package ge.edu.sangu.bookinist.book;
 
+import ge.edu.sangu.bookinist.author.AuthorService;
 import ge.edu.sangu.bookinist.genre.GenreService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -27,6 +28,7 @@ public class BookController {
 
     private final BookService bookService;
     private final GenreService genreService;
+    private final AuthorService authorService;
 
     @GetMapping({"/", "/index", "/home"})
     public String index(@SortDefault(sort = "publishedYear", direction = Sort.Direction.DESC) Pageable pageable,
@@ -56,6 +58,7 @@ public class BookController {
     public String showAddBookForm(Model model) {
         model.addAttribute("bookForm", new BookForm());
         model.addAttribute("genres", genreService.getAllGenres());
+        model.addAttribute("authors", authorService.getAllAuthors());
         return "add-book";
     }
 
@@ -65,12 +68,13 @@ public class BookController {
                           Model model) throws IOException {
         if (bindingResult.hasErrors()) {
             model.addAttribute("genres", genreService.getAllGenres());
+            model.addAttribute("authors", authorService.getAllAuthors());
             return "add-book";
         }
 
         Book book = new Book();
         book.setTitle(bookForm.getTitle());
-        book.setAuthor(bookForm.getAuthor());
+        book.setAuthor(authorService.getAuthorById(bookForm.getAuthorId()));
         book.setPublishedYear(bookForm.getPublishedYear());
         book.setIsbn(bookForm.getIsbn());
         book.setRating(bookForm.getRating());

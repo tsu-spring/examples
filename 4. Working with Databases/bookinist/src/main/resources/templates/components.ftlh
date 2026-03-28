@@ -41,7 +41,9 @@
                         <h5 class="card-title mb-1">
                             <a href="<@spring.url '/book/${book.id}'/>" class="text-decoration-none text-dark">${book.title}</a>
                         </h5>
-                        <p class="text-muted mb-2">${book.author}</p>
+                        <p class="text-muted mb-2">
+                            <a href="<@spring.url '/author/${book.author.id}'/>" class="text-muted text-decoration-none">${book.author.name}</a>
+                        </p>
                         <div class="mb-2">
                             <#list book.genres as genre>
                                 <span class="badge bg-primary-subtle text-primary-emphasis me-1">${genre.name}</span>
