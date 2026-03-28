@@ -52,7 +52,14 @@
     { "name": "Nathaniel Hawthorne", "bio": "American novelist and short story writer. Best known for The Scarlet Letter and The House of the Seven Gables.", "wikipediaSlug": "Nathaniel_Hawthorne" },
     { "name": "Gabriel Garcia Marquez", "bio": "Colombian novelist, short story writer, and journalist. Nobel Prize laureate known for One Hundred Years of Solitude.", "wikipediaSlug": "Gabriel_García_Márquez" },
     { "name": "Mark Twain", "bio": "American writer, humorist, and lecturer, often called the father of American literature. Best known for The Adventures of Tom Sawyer and Adventures of Huckleberry Finn.", "wikipediaSlug": "Mark_Twain" },
-    { "name": "Joseph Conrad", "bio": "Polish-British novelist regarded as one of the greatest English-language writers. Best known for Heart of Darkness and Lord Jim.", "wikipediaSlug": "Joseph_Conrad" }
+    { "name": "Joseph Conrad", "bio": "Polish-British novelist regarded as one of the greatest English-language writers. Best known for Heart of Darkness and Lord Jim.", "wikipediaSlug": "Joseph_Conrad" },
+    { "name": "Herman Melville", "bio": "American novelist, short story writer, and poet. Best known for Moby-Dick, now considered one of the greatest American novels.", "wikipediaSlug": "Herman_Melville" },
+    { "name": "Dante Alighieri", "bio": "Italian poet, writer, and philosopher. His Divine Comedy is widely considered one of the most important poems of the Middle Ages and the greatest literary work in the Italian language.", "wikipediaSlug": "Dante_Alighieri" },
+    { "name": "William Shakespeare", "bio": "English playwright, poet, and actor, widely regarded as the greatest writer in the English language and the world's greatest dramatist.", "wikipediaSlug": "William_Shakespeare" },
+    { "name": "Franz Kafka", "bio": "German-speaking Bohemian novelist and short story writer, widely regarded as one of the major figures of 20th-century literature.", "wikipediaSlug": "Franz_Kafka" },
+    { "name": "Robert Louis Stevenson", "bio": "Scottish novelist, essayist, and poet. Best known for Treasure Island and Strange Case of Dr Jekyll and Mr Hyde.", "wikipediaSlug": "Robert_Louis_Stevenson" },
+    { "name": "Ernest Hemingway", "bio": "American novelist, short story writer, and journalist. Nobel Prize laureate known for his economical and understated style.", "wikipediaSlug": "Ernest_Hemingway" },
+    { "name": "Daniel Defoe", "bio": "English trader, writer, journalist, and spy. Best known for Robinson Crusoe, often credited as the first English novel.", "wikipediaSlug": "Daniel_Defoe" }
   ],
   "genres": [
     { "name": "Fiction" },
@@ -676,6 +683,603 @@
       "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141441672-M.jpg",
       "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141441672-L.jpg",
       "rating": 3.6
+    },
+    {
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "genres": ["Fiction", "Classic", "Adventure"],
+      "publishedYear": 1851,
+      "isbn": "9780142437247",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780142437247-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780142437247-L.jpg",
+      "rating": 3.9
+    },
+    {
+      "title": "The Divine Comedy",
+      "author": "Dante Alighieri",
+      "genres": ["Fiction", "Classic", "Philosophical"],
+      "publishedYear": 1320,
+      "isbn": "9780142437223",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780142437223-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780142437223-L.jpg",
+      "rating": 4.2
+    },
+    {
+      "title": "Hamlet",
+      "author": "William Shakespeare",
+      "genres": ["Fiction", "Classic", "Tragedy"],
+      "publishedYear": 1603,
+      "isbn": "9780141396507",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141396507-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141396507-L.jpg",
+      "rating": 4.4
+    },
+    {
+      "title": "The Metamorphosis",
+      "author": "Franz Kafka",
+      "genres": ["Fiction", "Classic", "Philosophical"],
+      "publishedYear": 1915,
+      "isbn": "9780486290300",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780486290300-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780486290300-L.jpg",
+      "rating": 4.1
+    },
+    {
+      "title": "Treasure Island",
+      "author": "Robert Louis Stevenson",
+      "genres": ["Fiction", "Classic", "Adventure"],
+      "publishedYear": 1883,
+      "isbn": "9780141321004",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141321004-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141321004-L.jpg",
+      "rating": 3.9
+    },
+    {
+      "title": "The Old Man and the Sea",
+      "author": "Ernest Hemingway",
+      "genres": ["Fiction", "Classic", "Adventure"],
+      "publishedYear": 1952,
+      "isbn": "9780684801223",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780684801223-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780684801223-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "Robinson Crusoe",
+      "author": "Daniel Defoe",
+      "genres": ["Fiction", "Classic", "Adventure"],
+      "publishedYear": 1719,
+      "isbn": "9780141439822",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439822-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439822-L.jpg",
+      "rating": 3.7
+    },
+    {
+      "title": "Emma",
+      "author": "Jane Austen",
+      "genres": ["Fiction", "Classic", "Romance"],
+      "publishedYear": 1815,
+      "isbn": "9780141439587",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439587-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439587-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "David Copperfield",
+      "author": "Charles Dickens",
+      "genres": ["Fiction", "Classic"],
+      "publishedYear": 1850,
+      "isbn": "9780140439441",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780140439441-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780140439441-L.jpg",
+      "rating": 4.0
+    },
+
+    {
+      "title": "It",
+      "author": "Stephen King",
+      "genres": ["Horror", "Thriller"],
+      "publishedYear": 1986,
+      "isbn": "9781501142970",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781501142970-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781501142970-L.jpg",
+      "rating": 4.4
+    },
+    {
+      "title": "The Stand",
+      "author": "Stephen King",
+      "genres": ["Horror", "Science Fiction", "Post-Apocalyptic"],
+      "publishedYear": 1978,
+      "isbn": "9780307743688",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307743688-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307743688-L.jpg",
+      "rating": 4.5
+    },
+    {
+      "title": "Misery",
+      "author": "Stephen King",
+      "genres": ["Horror", "Thriller"],
+      "publishedYear": 1987,
+      "isbn": "9781501156748",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781501156748-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781501156748-L.jpg",
+      "rating": 4.2
+    },
+    {
+      "title": "Carrie",
+      "author": "Stephen King",
+      "genres": ["Horror", "Thriller"],
+      "publishedYear": 1974,
+      "isbn": "9780307743664",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307743664-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307743664-L.jpg",
+      "rating": 3.9
+    },
+    {
+      "title": "The Green Mile",
+      "author": "Stephen King",
+      "genres": ["Fiction", "Horror"],
+      "publishedYear": 1996,
+      "isbn": "9781501160448",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781501160448-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781501160448-L.jpg",
+      "rating": 4.6
+    },
+
+    {
+      "title": "Harry Potter and the Chamber of Secrets",
+      "author": "J.K. Rowling",
+      "genres": ["Fantasy", "Adventure", "Young Adult"],
+      "publishedYear": 1998,
+      "isbn": "9780439064873",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780439064873-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780439064873-L.jpg",
+      "rating": 4.7
+    },
+    {
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "author": "J.K. Rowling",
+      "genres": ["Fantasy", "Adventure", "Young Adult"],
+      "publishedYear": 1999,
+      "isbn": "9780439136365",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780439136365-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780439136365-L.jpg",
+      "rating": 4.8
+    },
+    {
+      "title": "Harry Potter and the Goblet of Fire",
+      "author": "J.K. Rowling",
+      "genres": ["Fantasy", "Adventure", "Young Adult"],
+      "publishedYear": 2000,
+      "isbn": "9780439139601",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780439139601-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780439139601-L.jpg",
+      "rating": 4.8
+    },
+    {
+      "title": "Harry Potter and the Order of the Phoenix",
+      "author": "J.K. Rowling",
+      "genres": ["Fantasy", "Adventure", "Young Adult"],
+      "publishedYear": 2003,
+      "isbn": "9780439358071",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780439358071-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780439358071-L.jpg",
+      "rating": 4.7
+    },
+    {
+      "title": "Harry Potter and the Half-Blood Prince",
+      "author": "J.K. Rowling",
+      "genres": ["Fantasy", "Adventure", "Young Adult"],
+      "publishedYear": 2005,
+      "isbn": "9780439785969",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780439785969-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780439785969-L.jpg",
+      "rating": 4.8
+    },
+
+    {
+      "title": "A Farewell to Arms",
+      "author": "Ernest Hemingway",
+      "genres": ["Fiction", "Classic", "Romance", "Historical"],
+      "publishedYear": 1929,
+      "isbn": "9780684801469",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780684801469-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780684801469-L.jpg",
+      "rating": 3.9
+    },
+    {
+      "title": "For Whom the Bell Tolls",
+      "author": "Ernest Hemingway",
+      "genres": ["Fiction", "Classic", "Historical"],
+      "publishedYear": 1940,
+      "isbn": "9780684803357",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780684803357-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780684803357-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "The Sun Also Rises",
+      "author": "Ernest Hemingway",
+      "genres": ["Fiction", "Classic"],
+      "publishedYear": 1926,
+      "isbn": "9780743297332",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780743297332-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780743297332-L.jpg",
+      "rating": 3.8
+    },
+
+    {
+      "title": "The Three Musketeers",
+      "author": "Alexandre Dumas",
+      "genres": ["Fiction", "Classic", "Adventure", "Historical"],
+      "publishedYear": 1844,
+      "isbn": "9780141442341",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141442341-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141442341-L.jpg",
+      "rating": 4.3
+    },
+
+    {
+      "title": "The Hunchback of Notre-Dame",
+      "author": "Victor Hugo",
+      "genres": ["Fiction", "Classic", "Historical", "Romance"],
+      "publishedYear": 1831,
+      "isbn": "9780141442518",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141442518-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141442518-L.jpg",
+      "rating": 4.2
+    },
+
+    {
+      "title": "The Trial",
+      "author": "Franz Kafka",
+      "genres": ["Fiction", "Classic", "Philosophical"],
+      "publishedYear": 1925,
+      "isbn": "9780141182902",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141182902-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141182902-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "The Castle",
+      "author": "Franz Kafka",
+      "genres": ["Fiction", "Classic", "Philosophical"],
+      "publishedYear": 1926,
+      "isbn": "9780141183442",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141183442-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141183442-L.jpg",
+      "rating": 3.9
+    },
+
+    {
+      "title": "The Adventures of Tom Sawyer",
+      "author": "Mark Twain",
+      "genres": ["Fiction", "Classic", "Adventure", "Humor"],
+      "publishedYear": 1876,
+      "isbn": "9780141321103",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141321103-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141321103-L.jpg",
+      "rating": 3.9
+    },
+
+    {
+      "title": "No Country for Old Men",
+      "author": "Cormac McCarthy",
+      "genres": ["Fiction", "Thriller", "Crime"],
+      "publishedYear": 2005,
+      "isbn": "9780375706677",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780375706677-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780375706677-L.jpg",
+      "rating": 4.2
+    },
+    {
+      "title": "Blood Meridian",
+      "author": "Cormac McCarthy",
+      "genres": ["Fiction", "Classic", "Historical"],
+      "publishedYear": 1985,
+      "isbn": "9780679728757",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780679728757-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780679728757-L.jpg",
+      "rating": 4.2
+    },
+
+    {
+      "title": "The Testaments",
+      "author": "Margaret Atwood",
+      "genres": ["Fiction", "Dystopian"],
+      "publishedYear": 2019,
+      "isbn": "9780385543781",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780385543781-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780385543781-L.jpg",
+      "rating": 4.0
+    },
+
+    {
+      "title": "Angels & Demons",
+      "author": "Dan Brown",
+      "genres": ["Thriller", "Mystery"],
+      "publishedYear": 2000,
+      "isbn": "9780743493468",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780743493468-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780743493468-L.jpg",
+      "rating": 3.9
+    },
+
+    {
+      "title": "The Martian Chronicles",
+      "author": "Ray Bradbury",
+      "genres": ["Science Fiction", "Classic"],
+      "publishedYear": 1950,
+      "isbn": "9781451678192",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781451678192-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781451678192-L.jpg",
+      "rating": 4.1
+    },
+    {
+      "title": "The Illustrated Man",
+      "author": "Ray Bradbury",
+      "genres": ["Science Fiction", "Classic"],
+      "publishedYear": 1951,
+      "isbn": "9781451678185",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781451678185-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781451678185-L.jpg",
+      "rating": 4.1
+    },
+
+    {
+      "title": "Strange Case of Dr Jekyll and Mr Hyde",
+      "author": "Robert Louis Stevenson",
+      "genres": ["Fiction", "Classic", "Horror", "Gothic"],
+      "publishedYear": 1886,
+      "isbn": "9780141439730",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439730-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439730-L.jpg",
+      "rating": 4.0
+    },
+
+    {
+      "title": "Love in the Time of Cholera",
+      "author": "Gabriel Garcia Marquez",
+      "genres": ["Fiction", "Classic", "Romance"],
+      "publishedYear": 1985,
+      "isbn": "9780307389732",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307389732-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307389732-L.jpg",
+      "rating": 4.1
+    },
+
+    {
+      "title": "Cat's Cradle",
+      "author": "Kurt Vonnegut",
+      "genres": ["Science Fiction", "Classic", "Satire"],
+      "publishedYear": 1963,
+      "isbn": "9780440111498",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780440111498-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780440111498-L.jpg",
+      "rating": 4.2
+    },
+    {
+      "title": "Breakfast of Champions",
+      "author": "Kurt Vonnegut",
+      "genres": ["Fiction", "Classic", "Satire", "Humor"],
+      "publishedYear": 1973,
+      "isbn": "9780385334204",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780385334204-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780385334204-L.jpg",
+      "rating": 4.0
+    },
+
+    {
+      "title": "Sharp Objects",
+      "author": "Gillian Flynn",
+      "genres": ["Thriller", "Mystery", "Crime"],
+      "publishedYear": 2006,
+      "isbn": "9780307341556",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307341556-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307341556-L.jpg",
+      "rating": 3.9
+    },
+    {
+      "title": "Dark Places",
+      "author": "Gillian Flynn",
+      "genres": ["Thriller", "Mystery", "Crime"],
+      "publishedYear": 2009,
+      "isbn": "9780307341570",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307341570-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307341570-L.jpg",
+      "rating": 4.0
+    },
+
+    {
+      "title": "Catching Fire",
+      "author": "Suzanne Collins",
+      "genres": ["Dystopian", "Science Fiction", "Young Adult"],
+      "publishedYear": 2009,
+      "isbn": "9780439023498",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780439023498-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780439023498-L.jpg",
+      "rating": 4.3
+    },
+    {
+      "title": "Mockingjay",
+      "author": "Suzanne Collins",
+      "genres": ["Dystopian", "Science Fiction", "Young Adult"],
+      "publishedYear": 2010,
+      "isbn": "9780439023511",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780439023511-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780439023511-L.jpg",
+      "rating": 4.1
+    },
+
+    {
+      "title": "A Thousand Splendid Suns",
+      "author": "Khaled Hosseini",
+      "genres": ["Fiction", "Historical"],
+      "publishedYear": 2007,
+      "isbn": "9781594489501",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9781594489501-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9781594489501-L.jpg",
+      "rating": 4.4
+    },
+
+    {
+      "title": "The Girl Who Played with Fire",
+      "author": "Stieg Larsson",
+      "genres": ["Thriller", "Mystery", "Crime"],
+      "publishedYear": 2006,
+      "isbn": "9780307454553",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307454553-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307454553-L.jpg",
+      "rating": 4.1
+    },
+    {
+      "title": "The Girl Who Kicked the Hornets' Nest",
+      "author": "Stieg Larsson",
+      "genres": ["Thriller", "Mystery", "Crime"],
+      "publishedYear": 2007,
+      "isbn": "9780307269997",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780307269997-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780307269997-L.jpg",
+      "rating": 4.1
+    },
+
+    {
+      "title": "The Idiot",
+      "author": "Fyodor Dostoevsky",
+      "genres": ["Fiction", "Classic", "Philosophical"],
+      "publishedYear": 1869,
+      "isbn": "9780140447927",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780140447927-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780140447927-L.jpg",
+      "rating": 4.2
+    },
+
+    {
+      "title": "Lord Jim",
+      "author": "Joseph Conrad",
+      "genres": ["Fiction", "Classic", "Adventure"],
+      "publishedYear": 1900,
+      "isbn": "9780141441627",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141441627-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141441627-L.jpg",
+      "rating": 3.8
+    },
+    {
+      "title": "Nostromo",
+      "author": "Joseph Conrad",
+      "genres": ["Fiction", "Classic", "Adventure"],
+      "publishedYear": 1904,
+      "isbn": "9780141441634",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141441634-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141441634-L.jpg",
+      "rating": 3.7
+    },
+
+    {
+      "title": "Looking for Alaska",
+      "author": "John Green",
+      "genres": ["Fiction", "Young Adult", "Romance"],
+      "publishedYear": 2005,
+      "isbn": "9780142402511",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780142402511-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780142402511-L.jpg",
+      "rating": 4.0
+    },
+    {
+      "title": "Paper Towns",
+      "author": "John Green",
+      "genres": ["Fiction", "Young Adult", "Mystery"],
+      "publishedYear": 2008,
+      "isbn": "9780142403532",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780142403532-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780142403532-L.jpg",
+      "rating": 3.8
+    },
+
+    {
+      "title": "Persuasion",
+      "author": "Jane Austen",
+      "genres": ["Fiction", "Classic", "Romance"],
+      "publishedYear": 1817,
+      "isbn": "9780141439686",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439686-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439686-L.jpg",
+      "rating": 4.2
+    },
+    {
+      "title": "Mansfield Park",
+      "author": "Jane Austen",
+      "genres": ["Fiction", "Classic", "Romance"],
+      "publishedYear": 1814,
+      "isbn": "9780141439808",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439808-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439808-L.jpg",
+      "rating": 3.9
+    },
+
+    {
+      "title": "Oliver Twist",
+      "author": "Charles Dickens",
+      "genres": ["Fiction", "Classic"],
+      "publishedYear": 1838,
+      "isbn": "9780141439747",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439747-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439747-L.jpg",
+      "rating": 3.9
+    },
+    {
+      "title": "A Christmas Carol",
+      "author": "Charles Dickens",
+      "genres": ["Fiction", "Classic", "Fantasy"],
+      "publishedYear": 1843,
+      "isbn": "9780141439068",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141439068-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141439068-L.jpg",
+      "rating": 4.2
+    },
+
+    {
+      "title": "The Death of Ivan Ilyich",
+      "author": "Leo Tolstoy",
+      "genres": ["Fiction", "Classic", "Philosophical"],
+      "publishedYear": 1886,
+      "isbn": "9780140449617",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780140449617-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780140449617-L.jpg",
+      "rating": 4.3
+    },
+
+    {
+      "title": "The Silmarillion",
+      "author": "J.R.R. Tolkien",
+      "genres": ["Fantasy", "Classic"],
+      "publishedYear": 1977,
+      "isbn": "9780544338012",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780544338012-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780544338012-L.jpg",
+      "rating": 3.9
+    },
+
+    {
+      "title": "Tender Is the Night",
+      "author": "F. Scott Fitzgerald",
+      "genres": ["Fiction", "Classic", "Romance"],
+      "publishedYear": 1934,
+      "isbn": "9780141183596",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780141183596-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780141183596-L.jpg",
+      "rating": 3.8
+    },
+
+    {
+      "title": "The Restaurant at the End of the Universe",
+      "author": "Douglas Adams",
+      "genres": ["Science Fiction", "Humor"],
+      "publishedYear": 1980,
+      "isbn": "9780345391810",
+      "coverUrlMedium": "https://covers.openlibrary.org/b/isbn/9780345391810-M.jpg",
+      "coverUrlLarge": "https://covers.openlibrary.org/b/isbn/9780345391810-L.jpg",
+      "rating": 4.3
     }
   ]
 }
