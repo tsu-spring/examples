@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  # The chapter shows a Git backend (spring.cloud.config.server.git.uri).
+  # For a self-contained, offline-runnable demo we use the "native" backend,
+  # which serves the property files bundled under classpath:/config-repo.
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config-repo
